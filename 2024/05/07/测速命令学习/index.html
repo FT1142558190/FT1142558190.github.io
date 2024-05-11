@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>about | FTyiming</title>
-  <meta name="keywords" content="">
-  <meta name="description" content="about | FTyiming">
+  <title>测速命令学习 | FTyiming</title>
+  <meta name="keywords" content=" nmap ">
+  <meta name="description" content="测速命令学习 | FTyiming">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="学习计划 宿舍空调 压缩机功耗大 -压缩机 高压管 低压管 毛细管 蒸发器 制冷剂 吸收式制冷体积大 -溴化 电子控制模块 wifi模块 或者蓝牙模块已经非常成熟   家用太阳能发电系统搭建  材料成本高 -太阳能发电板 面积未知 -逆变器 整流桥 PN节 空气开关 各种电路保护 不会 -户外电源 至少20Ah  2000多块 -能否并网把电卖给公网 理论上不可能回本，所以只能是玩玩 材料全是二手">
 <meta property="og:type" content="website">
@@ -394,19 +394,26 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
+        <article id="post-测速命令学习" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">about</h1>
+        <h1 class="article-title">测速命令学习</h1>
     
     <div class="article-meta">
         
         
         
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color5">nmap</a>
+            
+        </span>
         
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2024-03-24 18:44:17'>2024-03-22 13:24</time>
+            发布时间 : <time class="date" title='最后更新: 2024-05-07 16:27:02'>2024-05-07 16:13</time>
         
     </div>
     <div class="article-meta">
@@ -428,7 +435,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92"><span class="toc-text">学习计划</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%98%A5-%E5%AE%89%E5%85%A8%E9%97%AE%E9%A2%98"><span class="toc-text">😥 安全问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%98%95-%E6%94%BE%E5%BC%83"><span class="toc-text">😕 放弃</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%9D%A4%EF%B8%8FContributing-Guide"><span class="toc-text">❤️Contributing Guide</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%A4%A1Disclaimers"><span class="toc-text">🤡Disclaimers</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#nmap-10-181-255-254"><span class="toc-text">nmap 10.181.255.254</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-TCP%E5%85%A8%E8%BF%9E%E6%8E%A5%E6%89%AB%E6%8F%8F"><span class="toc-text">2.1 TCP全连接扫描</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-SYN%E5%8D%8A%E9%93%BE%E6%8E%A5%E6%89%AB%E6%8F%8F"><span class="toc-text">2.2 SYN半链接扫描</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-%E9%9A%90%E7%A7%98%E6%89%AB%E6%8F%8F"><span class="toc-text">2.3 隐秘扫描</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#tracert-baidu-com"><span class="toc-text">tracert baidu.com</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#iperf3-exe-c-10-181-255-254"><span class="toc-text">iperf3.exe -c 10.181.255.254</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1%EF%BC%8Ciperf3%E7%AE%80%E4%BB%8B"><span class="toc-text">1，iperf3简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%EF%BC%8C%E8%AF%A6%E7%BB%86%E5%91%BD%E4%BB%A4%E5%8F%82%E6%95%B0"><span class="toc-text">2，详细命令参数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%EF%BC%8C%E5%AE%89%E8%A3%85"><span class="toc-text">3，安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4%EF%BC%8C%E5%AE%9E%E9%99%85%E4%BD%BF%E7%94%A8%E2%80%93%E7%AE%80%E5%8D%95%E7%94%A8%E4%BE%8B"><span class="toc-text">4，实际使用–简单用例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5%EF%BC%8C%E5%AE%9E%E9%99%85%E4%BD%BF%E7%94%A8%E2%80%93%E5%A4%8D%E6%9D%82%E7%94%A8%E4%BE%8B"><span class="toc-text">5，实际使用–复杂用例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6%EF%BC%8C%E4%B8%80%E4%BA%9B%E6%8A%80%E5%B7%A7"><span class="toc-text">6，一些技巧</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -444,103 +451,129 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="学习计划"><a href="#学习计划" class="headerlink" title="学习计划"></a><strong>学习计划</strong></h2><ol>
-<li><p>宿舍空调</p>
-<pre><code class="apache">压缩机功耗大
--压缩机 高压管 低压管 毛细管 蒸发器 制冷剂
-吸收式制冷体积大
--溴化
-电子控制模块 wifi模块 或者蓝牙模块已经非常成熟
+        <h2 id="nmap-10-181-255-254"><a href="#nmap-10-181-255-254" class="headerlink" title="nmap 10.181.255.254"></a>nmap 10.181.255.254</h2><p>Starting Nmap 7.94 ( <a target="_blank" rel="noopener" href="https://nmap.org/">https://nmap.org</a> ) at 2024-05-07 16:22 中国标准时间<br>Nmap scan report for 10.181.255.254<br>Host is up (0.0016s latency).<br>Not shown: 998 closed tcp ports (reset)<br>PORT     STATE SERVICE<br>23&#x2F;tcp   open  telnet<br>3333&#x2F;tcp open  dec-notes<br>MAC Address: 58:69:6C:5F:51:66 (Ruijie Networks)</p>
+<p>Nmap done: 1 IP address (1 host up) scanned in 0.30 seconds</p>
+<h3 id="2-1-TCP全连接扫描"><a href="#2-1-TCP全连接扫描" class="headerlink" title="2.1 TCP全连接扫描"></a>2.1 TCP全连接扫描</h3><p>使用 <code>-sT</code>参数进行TCP全连接扫描。</p>
+<p>「全连接扫描」使用完整的三次握手建立链接，能够建立链接就判定端口开放，否则判定端口关闭。</p>
+<p><code>nmap192.168.31.180-p80-sT </code>1）如果端口开放,就会进行完整的三次握手，</p>
+<p>成功建立链接,扫描结果中,STATE字段显示为open。</p>
+<p><img src="https://pic3.zhimg.com/80/v2-e72879e74b297c2ba64e490bceec2762_720w.webp"></p>
+<p>2）如果端口关闭，就只能进行一次握手，无法建立链接，扫描结果中，</p>
+<p>STATE字段显示为 closed。</p>
+<p><img src="https://pic4.zhimg.com/80/v2-2e9b986346b96101df2b0976b7390b67_720w.webp"></p>
+<h3 id="2-2-SYN半链接扫描"><a href="#2-2-SYN半链接扫描" class="headerlink" title="2.2 SYN半链接扫描"></a>2.2 SYN半链接扫描</h3><p>使用 <code>-sS</code>参数进行SYN半链接扫描。</p>
+<p>「半链接扫描」只进行两次握手，对方返回确认帧（ACK&#x3D;1）就判定端口开放，否则判定端口关闭。</p>
+<p><code>nmap192.168.31.180-p80-sS </code></p>
+<p>1）如果端口开放，就会进行两次握手，</p>
+<p>扫描结果中，STATE字段为 open 。</p>
+<p><img src="https://pic2.zhimg.com/80/v2-d7dfa66a82a3736b14e7aa794176bb0d_720w.webp"></p>
+<p>2）如果端口关闭，就只有一次握手，扫描结果中，STATE字段为 closed。</p>
+<p><img src="https://pic2.zhimg.com/80/v2-00918b63e0b9772241505bf74e2436e9_720w.webp"></p>
+<h3 id="2-3-隐秘扫描"><a href="#2-3-隐秘扫描" class="headerlink" title="2.3 隐秘扫描"></a>2.3 隐秘扫描</h3><p>隐秘扫描，只适用于Linux系统。</p>
+<p>「隐秘扫描」向目标主机的端口发送TCP FIN包 或 Xmas tree包 或 Null包，如果收到RST响应包，就判定端口关闭，否则就判定端口开放或被屏蔽（open&#x2F;filtered）</p>
+<p><code>nmap127.0.0.1-p80-sFnmap127.0.0.1-p80-sNnmap127.0.0.1-p80-sX </code>扫描网段中有哪些主机在线，使用 <code>-sP</code>参数，不扫描端口，只扫描「存活主机」。</p>
+<p>本质上是Ping扫描，能Ping通有回包，就判定主机在线。</p>
+<p><code>nmap-sP192.168.31.0/24 </code></p>
+<p><img src="https://pic1.zhimg.com/80/v2-637734365c8863006467e939c4b4c788_720w.webp"></p>
+<p>从上图可以看到：</p>
+<p>它用2秒扫描了这个网段的256个IP，</p>
+<p>其中有3个存活主机，效率还是蛮不错的。</p>
+<p>扫描端口时，默认显示端口对应的服务，但不显示服务版本。</p>
+<p>想要识别具体的「服务版本」，可以使用 <code>-sV</code>参数。</p>
+<p><code>nmap192.168.31.180-p80-sV </code></p>
+<p><img src="https://pic2.zhimg.com/80/v2-0e31dedba2e2bf1c5224fd509b94d2f9_720w.webp"></p>
+<p>扫描结果中，VERSION字段显示服务的详细版本。</p>
+<p>想要识别「操作系统版本」，可以使用 <code>-O</code>参数。</p>
+<p><code>nmap192.168.31.180-p80-O </code></p>
+<p><img src="https://pic4.zhimg.com/80/v2-3ddb5ae1278331ef3c708f177163090f_720w.webp"></p>
+<p>提示：</p>
+<h2 id="tracert-baidu-com"><a href="#tracert-baidu-com" class="headerlink" title="tracert baidu.com"></a>tracert baidu.com</h2><p>到 baidu.com [110.242.68.66] 的路由:                                                                                                                                                                                                              1    &lt;1 毫秒    *        *     10.181.255.254                                                                           2    &lt;1 毫秒   &lt;1 毫秒   &lt;1 毫秒 bogon [172.16.0.109]                                                                   3    &lt;1 毫秒   &lt;1 毫秒   &lt;1 毫秒 bogon [172.16.0.101]                                                                   4     *        *        3 ms  hebei.2.60.in-addr.arpa [60.2.111.17]                                                     5     *        2 ms     2 ms  hebei.192.221.in-addr.arpa [221.192.89.225]                                               6     2 ms     *        *     hebei.192.221.in-addr.arpa [221.192.89.254]                                               7     2 ms     *        2 ms  hebei.182.61.in-addr.arpa [61.182.180.137]                                                8     7 ms     7 ms    11 ms  110.242.66.162                                                                            9     7 ms     7 ms     7 ms  221.194.45.134                                                                           10     *        *        *     请求超时。                                                                               11     *        *        *     请求超时。                                                                               12     *        *        *     请求超时。                                                                               13     *        *        *     请求超时。                                                                               14     7 ms     7 ms     7 ms  110.242.68.66                                                                                                                                                                                                   跟踪完成。</p>
+<h2 id="iperf3-exe-c-10-181-255-254"><a href="#iperf3-exe-c-10-181-255-254" class="headerlink" title="iperf3.exe -c 10.181.255.254"></a>iperf3.exe -c 10.181.255.254</h2><p><a href="">https://iperf.fr/iperf-download.php</a></p>
+<p>iperf3: error - unable to connect to server: Connection refused</p>
+<h2 id="1，iperf3简介"><a href="#1，iperf3简介" class="headerlink" title="1，iperf3简介"></a>1，iperf3简介</h2><p>iPerf3是用于主动测试IP网络上最大可用带宽的工具。它支持时序、缓冲区、协议（TCP，UDP，SCTP与IPv4和IPv6）有关的各种参数。对于每次测试，它都会详细的带宽报告，延迟抖动和数据包丢失。</p>
+<p>它与原始 iPerf 不共享任何代码，也不向后兼容。</p>
+<p>它是一个C&#x2F;S架构的测试工具，需要在同时运行在服务器端和客户端。</p>
+<p>支持的平台：Windows, Linux, Android, MacOS X, FreeBSD, OpenBSD, iPhone&#x2F;iPad等</p>
+<h2 id="2，详细命令参数"><a href="#2，详细命令参数" class="headerlink" title="2，详细命令参数"></a>2，详细命令参数</h2><p>执行， <strong>iperf3 -h</strong> ，可以查看所有的命令信息</p>
+<p>以下是中文信息， iPerf 3.1.2 支持的所有参数：</p>
+<pre><code class="text">-p, --port #，Server 端监听、Client 端连接的端口号； 
+-f, --format [kmgKMG]，报告中所用的数据单位，Kbits, Mbits, KBytes, Mbytes； 
+-i, --interval #，每次报告的间隔，单位为秒； 
+-F, --file name，测试所用文件的文件名。如果使用在 Client 端，发送该文件用作测试；如果使用在 Server 端，则是将数据写入该文件，而不是丢弃； 
+-A, --affinity n/n,m，设置 CPU 亲和力； 
+-B, --bind ，绑定指定的网卡接口； 
+-V, --verbose，运行时输出更多细节； 
+-J, --json，运行时以 JSON 格式输出结果； 
+--logfile f，输出到文件； 
+-d, --debug，以 debug 模式输出结果； 
+-v, --version，显示版本信息并退出； 
+-h, --help，显示帮助信息并退出。 
+Server 端参数： 
+-s, --server，以 Server 模式运行； 
+-D, --daemon，在后台以守护进程运行； 
+-I, --pidfile file，指定 pid 文件； 
+-1, --one-off，只接受 1 次来自 Client 端的测试，然后退出。 
+Client 端参数 
+-c, --client ，以 Client 模式运行，并指定 Server 端的地址； 
+-u, --udp，以 UDP 协议进行测试； 
+-b, --bandwidth #[KMG][/#]，限制测试带宽。UDP 默认为 1Mbit/秒，TCP 默认无限制； 
+-t, --time #，以时间为测试结束条件进行测试，默认为 10 秒； 
+-n, --bytes #[KMG]，以数据传输大小为测试结束条件进行测试； 
+-k, --blockcount #[KMG]，以传输数据包数量为测试结束条件进行测试； 
+-l, --len #[KMG]，读写缓冲区的长度，TCP 默认为 128K，UDP 默认为 8K； 
+--cport ，指定 Client 端运行所使用的 TCP 或 UDP 端口，默认为临时端口； 
+-P, --parallel #，测试数据流并发数量； 
+-R, --reverse，反向模式运行（Server 端发送，Client 端接收）； 
+-w, --window #[KMG]，设置套接字缓冲区大小，TCP 模式下为窗口大小； 
+-C, --congestion ，设置 TCP 拥塞控制算法（仅支持 Linux 和 FreeBSD ）； 
+-M, --set-mss #，设置 TCP/SCTP 最大分段长度（MSS，MTU 减 40 字节）； 
+-N, --no-delay，设置 TCP/SCTP no delay，屏蔽 Nagle 算法； 
+-4, --version4，仅使用 IPv4； 
+-6, --version6，仅使用 IPv6； 
+-S, --tos N，设置 IP 服务类型（TOS，Type Of Service）； 
+-L, --flowlabel N，设置 IPv6 流标签（仅支持 Linux）； 
+-Z, --zerocopy，使用 “zero copy”（零拷贝）方法发送数据； 
+-O, --omit N，忽略前 n 秒的测试； 
+-T, --title str，设置每行测试结果的前缀； 
+--get-server-output，从 Server 端获取测试结果； 
+--udp-counters-64bit，在 UDP 测试包中使用 64 位计数器（防止计数器溢出）。 
+ 
 </code></pre>
-</li>
-<li><p>家用太阳能发电系统搭建</p>
-<pre><code class="apache">
-材料成本高
--太阳能发电板 面积未知
--逆变器 整流桥 PN节 空气开关 各种电路保护 不会
--户外电源 至少20Ah  2000多块
--能否并网把电卖给公网
-理论上不可能回本，所以只能是玩玩
-材料全是二手只要600(无户外电源)
-</code></pre>
-</li>
-<li><p>家用私人网盘成本高</p>
-<pre><code class="apache">市面上成熟的产品，绿联的NAS，一台电脑就可以的黑群晖，但是基本的计算机网络通信原理不会。
-        理想功能
-           1.功耗低，可以有很多sata硬盘接口
-           2.只要在同一局域网内就可以实现联通，上传和下载的速率只被路由器限制
-           3.什么是他妈的的单片机 树莓派 什么是他妈的ios windows 安卓 liuxs
-           4.dockers这种轻量化的虚拟环境如何完成自动化任务  比如 阿里云盘签到 如何完成多线程高并发的自动化任务
-           5.公网ip到底怎么用，怎么申请
-</code></pre>
-</li>
-<li><p>在这种家庭宽带下，公用的IP地址能否保证网络安全</p>
-</li>
-<li><p>数学建模？</p>
-<pre><code class="apache">重要吗，很重要吗
-</code></pre>
-</li>
-<li><p>comsol 基础不牢学不了一点</p>
-</li>
-<li><p>漫长的电子模块学习，数电，模电。👀️ 积累维修经验</p>
-</li>
-<li><p>漫长代码学习，完善网站，学习新的功能</p>
-</li>
-<li><p>fros是一款<strong>路由器上网行为管理系统</strong>，可以过滤游戏、视频等几百款app，防沉迷功能可以基于流量、时长自动控制app联网，可以合理安排小孩上网时间</p>
-</li>
-</ol>
-<h2 id="😥-安全问题"><a href="#😥-安全问题" class="headerlink" title="😥 安全问题"></a>😥 安全问题</h2><pre><code class="commandline">是个主要问题
-
-</code></pre>
-<h2 id="😕-放弃"><a href="#😕-放弃" class="headerlink" title="😕 放弃"></a>😕 放弃</h2><p><del>安卓逆向，手机这个东西用不习惯太封闭了，不如研究研究树莓派 单片机</del></p>
-<p><del>我与英语不共戴天之仇</del></p>
-<h2 id="❤️Contributing-Guide"><a href="#❤️Contributing-Guide" class="headerlink" title="❤️Contributing Guide"></a>❤️Contributing Guide</h2><p>若发现程序存在任何 bug 或有好的想法，欢迎提交 Issue，提交 bug 反馈时需要带上报错信息截图（截全）以及对应 log 文件，并说明触发条件</p>
-<p>提交 Issue 时应当遵守 <strong><a target="_blank" rel="noopener" href="https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md">提问的智慧</a></strong> 以及<a target="_blank" rel="noopener" href="https://github.com/tangx/Stop-Ask-Questions-The-Stupid-Ways">别像弱智一样提问</a>，切勿以 <code>不懂</code>、<code>萌新问个问题</code>、<code>小白啥也不会浇浇</code>、<code>整个xxx呗</code>作为标题，否则一律忽略</p>
-<p><a target="_blank" rel="noopener" href="https://github.com/SocialSisterYi/CxKitty/issues">Issue</a> 为本项目的唯一反馈渠道，任何包括不限于在 QQ、B站私信、Telegram、微信 的提问一律忽略</p>
-<h2 id="🤡Disclaimers"><a href="#🤡Disclaimers" class="headerlink" title="🤡Disclaimers"></a>🤡Disclaimers</h2><ul>
-<li>本项目以 <a target="_blank" rel="noopener" href="https://github.com/SocialSisterYi/CxKitty/blob/main/LICENSE">GPL-3.0 License</a> 作为开源协议，这意味着你需要遵守相应的规则</li>
-<li>本项目仅适用于<strong>学习研究</strong>，任何人不得以此用于<strong>盈利</strong></li>
-<li>使用本项目造成的任何后果与本人无关</li>
-</ul>
-<p>免责申明<br>请注意以下条款和条件，以规避您的风险和损失。如果您不同意本声明，请立即离开本网站。如果您继续访问和使用本网站，则表示您已经阅读、理解并同意接受本声明的所有条款和条件。</p>
-<ol>
-<li>本网站所提供的任何内容和服务仅供用户个人学习、研究和测试之用，不得作为商业用途。本网站的所有信息未来可能会随时更新和更改，不保证其准确性、完整性.及时性、适用性、稳定性和可靠性 ；</li>
-<li>不得利用本服务故意或者过失的从事危害国家安全和社会公共利益、扰乱经济秩序和社会秩序、侵犯他人合法权益等法律、行政法规禁止的活动，请勿输入、生成并发布、输出、传播涉及国家法律法规禁止以下内容：</li>
-</ol>
-<ul>
-<li>危害国家安全，泄露国家秘密，颠覆国家政权，破坏国家统一的；</li>
-<li>损害国家荣誉和利益的；</li>
-<li>歪曲、丑化、亵渎、否定英雄烈士事迹和精神，以侮辱、诽谤或者其他方式侵害英雄烈士的姓名、肖像、名誉、荣誉的；</li>
-<li>宣扬恐怖主义、极端主义或者煽动实施恐怖活动、极端主义活动的；</li>
-<li>煽动民族仇恨、民族歧视，破坏民族团结的；</li>
-<li>破坏国家宗教政策，宣扬邪教和封建迷信的；</li>
-<li>散布谣言，扰乱经济秩序和社会秩序的；</li>
-<li>散布淫秽、色情、赌博、暴力、凶杀、恐怖或者教唆犯罪的；</li>
-<li>侮辱或者诽谤他人，侵害他人名誉、隐私和其他合法权益的；</li>
-<li>含有虚假、有害、胁迫、侵害他人隐私、骚扰、侵害、中伤、粗俗、猥亵、或其它道德上令人反感的内容；</li>
-<li>中国法律、法规、规章、条例以及任何具有法律效力之规范所限制或禁止的其它内容。</li>
-</ul>
-<ol start="3">
-<li>您同意并承诺，在使用本服务时，严格遵守国家及行业相关法律法规要求，不上传国家及金融行业涉密文件及数据、不上传非公开的资料及数据、客户资料、支付清算基础设施或系统的核心代码等内容，不会输入个人隐私信息；</li>
-<li>为最大限度限制敏感内容，并保证服务持续，我们会对敏感内容做过滤或删除处理，不能保证回复的完整性，同时会记录您的IP，如发现违法使用，本站将全力配合有关部门予以打击。</li>
-<li>为保护您的个人隐私，您的个人数据，全部保存在您的个人设备中，更换浏览器和清理浏览器缓存，都会导致历史提问数据一并被清理，如有重要信息，请及时做好备份。</li>
-<li>您确认并知悉本服务生成的所有内容都是由人工智能模型生成，所以可能会出现意外和错误的情况，请确保检查事实，并且其生成的内容不代表我们的态度或观点，仅为提供更多信息，也不构成任何建议或承诺。对于您根据本服务提供的信息所做出的一切行为，除非另有明确的书面承诺文件，否则我们不承担任何形式的责任。</li>
-<li>不论在何种情况下，本网站均不对由于网络连接故障，电力故障，罢工，劳动争议，暴乱，起义，骚乱，火灾，洪水，风暴，爆炸，不可抗力，战争，政府行为，国际、国内法院的命令，黑客攻击，互联网病毒，网络运营商技术调整，政府临时管制或任何其他不能合理控制的原因而造成的本服务不能访问、服务中断、信息及数据的延误、停滞或错误，不能提供或延迟提供服务而承担责任。<br>本网站不承担您就使用本服务所提供的信息或任何链接所引致的任何直接、间接、附带、从属、特殊、继发、惩罚性或惩戒性的损害赔偿。</li>
-</ol>
-<pre><code> ███████████ ███████████  █████████              ███                   ███
- ░░███░░░░░░█░█░░░███░░░█ ███░░░░░░              ░░░                   ░░░
- ░███   █ ░ ░   ░███  ░ ░███ ██████  █████ ████ ████  █████████████   ████  ████████    ███████
- ░███████       ░███    ░███░███░███░░███ ░███ ░░███ ░░███░░███░░███ ░░███ ░░███░░███  ███░░███
- ░███░░░█       ░███    ░███░███░███ ░███ ░███  ░███  ░███ ░███ ░███  ░███  ░███ ░███ ░███ ░███
- ░███  ░        ░███    ░███░░░ ░███ ░███ ░███  ░███  ░███ ░███ ░███  ░███  ░███ ░███ ░███ ░███
- █████          █████   ░░█████████  ░░███████  █████ █████░███ █████ █████ ████ █████░░███████
-░░░░░          ░░░░░     ░░░░░░░░░    ░░░░░███ ░░░░░ ░░░░░ ░░░ ░░░░░ ░░░░░ ░░░░ ░░░░░  ░░░░░███
-                                      ███ ░███                                         ███ ░███
-                                      ░░██████                                         ░░██████
-                                        ░░░░░░                                           ░░░░░░
-</code></pre>
-<p>＋v FTyiming 有其他问题请联系作者欢迎一起交流讨论Q群<del>457452029</del><br>本文件仅供交流学习讨论，作者一切免责。请在24小时内删除，如有侵权请联系作者<br>声明：仅供内部学习交流，不保证能否正常运行，请勿用于正常教师课程，由此造成的任何后果，<br>包括但不限于清空学习记录、取消学习资格、学习成绩不及格、全校通报、取消学籍、行政处罚、刑事诉讼等，<br>由使用者负责，作者不支持也不鼓励用于网络技术学习以外的其他用途，继续使用视为使用者同意此声明。</p>
-<p>附: 二○○二年一月一日《计算机软件保护条例》第十七条规定：为了学习和研究软件内含的设计思想和原理，通过安装、显示、传输或者存储软件等方式使用软件的，可以不经软件著作权人许可，不向其支付报酬！鉴于此，也希望大家按此说明研究软件</p>
+<h2 id="3，安装"><a href="#3，安装" class="headerlink" title="3，安装"></a>3，安装</h2><p>linux安装：yum install -y iperf3 或者 官网下载离线安装包</p>
+<p>windows安装：官网直接下载安装包，下载完成后解压，使用时进入cmd终端，cd到解压路径，可以找到<strong>iperf3.exe</strong>程序即可正常使用</p>
+<p>Android&#x2F;iPhone&#x2F;iPad：官网下载 或者 应用商店下载</p>
+<p><img src="https://pic3.zhimg.com/80/v2-0a58759628593b449d6c41e3b5818fda_720w.webp"></p>
+<h2 id="4，实际使用–简单用例"><a href="#4，实际使用–简单用例" class="headerlink" title="4，实际使用–简单用例"></a>4，实际使用–简单用例</h2><p><img src="https://pic3.zhimg.com/80/v2-0f3fe344683c4b56aba378a0d926fdaa_720w.webp"></p>
+<p>上图为简单举例。拓扑图根据测试需求的实际网络结构需要调整。server可以配置在内网，也可以配置在外网。</p>
+<p>运行iperf3在服务器端，默认端口号为5201</p>
+<p>iperf3 -s</p>
+<p>运行iperf3在服务器端，如果需要指定的端口号加上-p port</p>
+<p>iperf3 -s -p 【这里写指定的端口号】</p>
+<p><strong>例：iperf3 -s -p 8888</strong></p>
+<p>运行iperf3在客户端，开始带宽测试</p>
+<p>iperf3 -c 【serverIP，这些写服务器的IP地址】</p>
+<p><strong>例：iperf3 -c 192.168.1.1</strong></p>
+<p>运行iperf3在客户端，设置多个并行数据流-P</p>
+<p>iperf3 -c serverIP -P streams</p>
+<p><strong>例：iperf3 -c 192.168.1.1 -P 3</strong></p>
+<p>运行iperf3在客户端，反向测试（服务器端发送数据到客户端）</p>
+<p>iperf3  -c serverIP -R</p>
+<p><strong>例：iperf3 -c 192.168.1.1 -R</strong></p>
+<p><img src="https://pic1.zhimg.com/80/v2-3d8b656986199eb71507020bd9c0579c_720w.webp"></p>
+<h2 id="5，实际使用–复杂用例"><a href="#5，实际使用–复杂用例" class="headerlink" title="5，实际使用–复杂用例"></a>5，实际使用–复杂用例</h2><p>运行iperf3在客户端，使用UDP协议，并设置使用的测试带宽</p>
+<p><strong>iperf3 -c  serverIP  -b 1000M  -t 60 -d</strong></p>
+<p>-c 为客户端运行并要指定服务端的IP地址</p>
+<p>-b 表示使用的测试带宽</p>
+<p>-t  表示以时间为测试结束条件进行测试，默认为 10 秒;</p>
+<p>-d  打印出更详细的debug调试信息</p>
+<p><strong>例：iperf3 -c  192.168.1.1 -b 1000M  -t 60 -d</strong></p>
+<p><img src="https://pic1.zhimg.com/80/v2-9926e1e73a936941b22490cbe59337dc_720w.webp"></p>
+<p>Interval：程序的运行时间</p>
+<p>Transfer：传输的数据总量</p>
+<p>Bandwidth：测试出的带宽</p>
+<p>Jitter：网路抖动</p>
+<p>Lost&#x2F;Total Datagrams：丢包数&#x2F;总数据包数（丢包率）</p>
+<h2 id="6，一些技巧"><a href="#6，一些技巧" class="headerlink" title="6，一些技巧"></a>6，一些技巧</h2><p>终止或者退出测试，快捷键Ctrl + c</p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 3400639399@qq.com </span>

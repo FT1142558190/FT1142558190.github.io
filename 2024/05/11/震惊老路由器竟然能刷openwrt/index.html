@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>震惊老路由器竟然能刷openwrt | FTyiming</title>
+  <meta name="keywords" content=" linux命令 ">
+  <meta name="description" content="震惊老路由器竟然能刷openwrt | FTyiming">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="学习计划 宿舍空调 压缩机功耗大 -压缩机 高压管 低压管 毛细管 蒸发器 制冷剂 吸收式制冷体积大 -溴化 电子控制模块 wifi模块 或者蓝牙模块已经非常成熟   家用太阳能发电系统搭建  材料成本高 -太阳能发电板 面积未知 -逆变器 整流桥 PN节 空气开关 各种电路保护 不会 -户外电源 至少20Ah  2000多块 -能否并网把电卖给公网 理论上不可能回本，所以只能是玩玩 材料全是二手">
+<meta property="og:type" content="website">
+<meta property="og:title" content="about">
+<meta property="og:url" content="https://ft1142558190.github.io/about/index.html">
+<meta property="og:site_name" content="FTyiming">
+<meta property="og:description" content="学习计划 宿舍空调 压缩机功耗大 -压缩机 高压管 低压管 毛细管 蒸发器 制冷剂 吸收式制冷体积大 -溴化 电子控制模块 wifi模块 或者蓝牙模块已经非常成熟   家用太阳能发电系统搭建  材料成本高 -太阳能发电板 面积未知 -逆变器 整流桥 PN节 空气开关 各种电路保护 不会 -户外电源 至少20Ah  2000多块 -能否并网把电卖给公网 理论上不可能回本，所以只能是玩玩 材料全是二手">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-03-22T05:24:26.000Z">
+<meta property="article:modified_time" content="2024-03-24T10:44:17.769Z">
+<meta property="article:author" content="FTyiming">
+<meta property="article:tag" content="FTyiming">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="true" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/"
+   class="avatar_target">
+    <img class="avatar"
+         src="/img/avatar.jpg"/>
+</a>
+<div class="author">
+    <span>FTyiming</span>
+</div>
+
+<div class="icon">
+    
+        
+            <a title="rss"
+               href="/atom.xml"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-rss"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="github"
+               href="https://github.com/FT1142558190"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            <a title="email"
+               href="mailto:3400639399@qq.com"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-email"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="qq"
+               href="http://wpa.qq.com/msgrd?v=3&uin=872336115&site=qq&menu=yes"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-qq"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="kugou"
+               href="https://www.kugou.com/"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-kugou"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="neteasemusic"
+               href="https://music.163.com/#/user/home?id=88151013"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-neteasemusic"></use>
+                    </svg>
+                
+            </a>
+        
+    
+</div>
+
+
+
+    <a class="more-menus">更多菜单</a>
+
+
+
+<ul>
+    <li>
+        <div class="all active" data-rel="全部文章">全部文章
+            
+                <small>(10)</small>
+            
+        </div>
+    </li>
+    
+        
+            
+                
+    <li>
+        <div data-rel="软路由">
+            
+            软路由
+            <small>(2)</small>
+        </div>
+        
+    </li>
+
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+        
+            
+            
+            
+                <a class="dynamic-menu "
+                   target="_blank"
+                        
+                   href="https://github.com/FT1142558190">github</a>
+        
+    </div>
+    <div>
+        
+            <a class="about  hasFriend  site_url"
+               
+               href="/about">关于</a>
+        
+        <a style="width: 50%"
+                
+                                           class="friends">友链</a>
+        
+    </div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="10">
+
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://FTyiming.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">全部文章</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" autocomplete="off"/>
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>测试</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>linux命令</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>nmap</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        
+        <a id="top" class="全部文章 软路由 "
+           href="/2024/05/11/%E9%9C%87%E6%83%8A%E8%80%81%E8%B7%AF%E7%94%B1%E5%99%A8%E7%AB%9F%E7%84%B6%E8%83%BD%E5%88%B7openwrt/"
+           data-tag="linux命令"
+           data-author="" >
+            <span class="post-title" title="震惊老路由器竟然能刷openwrt">震惊老路由器竟然能刷openwrt</span>
+            <span class="post-date" title="2024-05-11 22:25:14">2024/05/11</span>
+        </a>
+        
+        
+        <a  class="全部文章 "
+           href="/2024/05/11/%E5%B8%83%E5%B1%80/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="布局">布局</span>
+            <span class="post-date" title="2024-05-11 22:49:57">2024/05/11</span>
+        </a>
+        
+        
+        <a  class="全部文章 软路由 "
+           href="/2024/05/07/Flash%20LayoutFlash%20%E5%B8%83%E5%B1%80/"
+           data-tag="linux命令"
+           data-author="" >
+            <span class="post-title" title="Flash Layout/Flash 布局">Flash Layout/Flash 布局</span>
+            <span class="post-date" title="2024-05-07 22:54:43">2024/05/07</span>
+        </a>
+        
+        
+        <a  class="全部文章 "
+           href="/2024/05/07/%E5%BF%AB%E9%80%9F%E5%85%8B%E9%9A%86%E7%BD%91%E7%AB%99/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="快速克隆网站">快速克隆网站</span>
+            <span class="post-date" title="2024-05-07 22:54:42">2024/05/07</span>
+        </a>
+        
+        
+        <a  class="全部文章 "
+           href="/2024/05/07/%E6%B5%8B%E9%80%9F%E5%91%BD%E4%BB%A4%E5%AD%A6%E4%B9%A0/"
+           data-tag="nmap"
+           data-author="" >
+            <span class="post-title" title="测速命令学习">测速命令学习</span>
+            <span class="post-date" title="2024-05-07 16:13:24">2024/05/07</span>
+        </a>
+        
+        
+        <a  class="全部文章 "
+           href="/2024/04/26/%E7%AE%80%E5%8E%86/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="简历">简历</span>
+            <span class="post-date" title="2024-04-26 23:47:47">2024/04/26</span>
+        </a>
+        
+        
+        <a  class="全部文章 "
+           href="/2024/04/26/%E5%AE%B6%E7%94%A8%E7%94%B5%E8%84%91%E4%B9%9F%E8%83%BD%E8%BD%BB%E6%9D%BE%E7%8E%A9%E8%BD%AC%E5%A4%A7%E6%A8%A1%E5%9E%8B/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="家用电脑也能轻松玩转大模型">家用电脑也能轻松玩转大模型</span>
+            <span class="post-date" title="2024-04-26 23:42:53">2024/04/26</span>
+        </a>
+        
+        
+        <a  class="全部文章 "
+           href="/2024/03/30/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8HEXO/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="如何使用HEXO">如何使用HEXO</span>
+            <span class="post-date" title="2024-03-30 14:31:02">2024/03/30</span>
+        </a>
+        
+        
+        <a  class="全部文章 "
+           href="/2024/03/22/My-New-Post/"
+           data-tag="测试"
+           data-author="" >
+            <span class="post-title" title="大白话之耦合性：什么是耦合性和内聚性？用编程语言实例讲解！">大白话之耦合性：什么是耦合性和内聚性？用编程语言实例讲解！</span>
+            <span class="post-date" title="2024-03-22 18:14:54">2024/03/22</span>
+        </a>
+        
+        
+        <a  class="全部文章 "
+           href="/2024/03/22/hello-world/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Hello World">Hello World</span>
+            <span class="post-date" title="2024-03-22 11:51:54">2024/03/22</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏 快捷键 s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-震惊老路由器竟然能刷openwrt" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">震惊老路由器竟然能刷openwrt</h1>
+    
+    <div class="article-meta">
+        
+        <span class="top"><a>置顶</a></span>
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="软路由">软路由</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color3">linux命令</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            发布时间 : <time class="date" title='最后更新: 2024-05-11 22:37:26'>2024-05-11 22:25</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8-top-%E5%B0%86%E4%BC%9A%E7%BD%AE%E9%A1%B6%E6%96%87%E7%AB%A0%EF%BC%8C%E5%A4%9A%E4%B8%AA%E7%BD%AE%E9%A1%B6%E6%96%87%E7%AB%A0%E6%97%B6%EF%BC%8Ctop-%E5%AE%9A%E4%B9%89%E7%9A%84%E5%80%BC%E8%B6%8A%E5%A4%A7%EF%BC%8C%E8%B6%8A%E9%9D%A0%E5%89%8D%E3%80%82"><span class="toc-text">使用 top 将会置顶文章，多个置顶文章时，top 定义的值越大，越靠前。</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#TP-Link-TL-WR842N-ND"><span class="toc-text">TP-Link TL-WR842N&#x2F;ND</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8D%E8%BF%87%E5%8F%AF%E4%BB%A5%E7%BB%A7%E7%BB%AD%E5%AD%A6%E4%B9%A0-openwrt"><span class="toc-text">不过可以继续学习 openwrt</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Installation%E5%AE%89%E8%A3%85"><span class="toc-text">Installation安装</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Flash-recovery-v1%E9%97%AA%E5%AD%98-%E6%81%A2%E5%A4%8Dv1"><span class="toc-text">Flash&#x2F;recovery v1闪存&#x2F;恢复v1</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Flash-recovery-v2%E9%97%AA%E5%AD%98-%E6%81%A2%E5%A4%8Dv2"><span class="toc-text">Flash&#x2F;recovery v2闪存&#x2F;恢复v2</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Flash-recovery-v3%E9%97%AA%E5%AD%98-%E6%81%A2%E5%A4%8Dv3"><span class="toc-text">Flash&#x2F;recovery v3闪存&#x2F;恢复v3</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Flash-recovery-v5%E9%97%AA%E5%AD%98-%E6%81%A2%E5%A4%8Dv5"><span class="toc-text">Flash&#x2F;recovery v5闪存&#x2F;恢复v5</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Unbrick-v2"><span class="toc-text">Unbrick v2</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Back-to-stock-firmware%E8%BF%94%E5%9B%9E%E5%88%B0%E5%BA%93%E5%AD%98%E5%9B%BA%E4%BB%B6"><span class="toc-text">Back to stock firmware返回到库存固件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hardware-Highlights%E7%A1%AC%E4%BB%B6%E4%BA%AE%E7%82%B9"><span class="toc-text">Hardware Highlights硬件亮点</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Detail-info%E8%AF%A6%E7%BB%86%E4%BF%A1%E6%81%AF"><span class="toc-text">Detail info详细信息</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#LAN-port-mapping%E5%B1%80%E5%9F%9F%E7%BD%91%E7%AB%AF%E5%8F%A3%E6%98%A0%E5%B0%84"><span class="toc-text">LAN-port mapping局域网端口映射</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Flash-LayoutFlash%E5%B8%83%E5%B1%80"><span class="toc-text">Flash LayoutFlash布局</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#GPIOsGPIO"><span class="toc-text">GPIOsGPIO</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Photos%E7%85%A7%E7%89%87"><span class="toc-text">Photos照片</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Opening-the-Case%E6%89%93%E5%BC%80%E6%9C%BA%E7%AE%B1"><span class="toc-text">Opening the Case打开机箱</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Serial-connector%E4%B8%B2%E8%A1%8C%E8%BF%9E%E6%8E%A5%E5%99%A8"><span class="toc-text">Serial connector串行连接器</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Serial%E4%B8%B2%E8%A1%8C"><span class="toc-text">Serial串行</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Pinout%E5%BC%95%E8%84%9A%E8%AF%B4%E6%98%8E"><span class="toc-text">Pinout引脚说明</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Power%E5%8A%9F%E7%8E%87"><span class="toc-text">Power功率</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#General%E4%B8%80%E8%88%AC"><span class="toc-text">General一般</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Main-3V3-Power%E4%B8%BB3V3%E7%94%B5%E6%BA%90"><span class="toc-text">Main 3V3 Power主3V3电源</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#USB-PowerUSB%E7%94%B5%E6%BA%90"><span class="toc-text">USB PowerUSB电源</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Tags"><span class="toc-text">Tags</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%94%E8%AE%B0"><span class="toc-text">笔记</span></a></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>4.2 文章排序</p>
+<pre><code>2020-05-20 更新：无需安装插件或修改源码，主题已经内置排序算法
+</code></pre>
+<p>文章列表默认按照创建时间（如下文章内定义的date）倒序。</p>
+<h2 id="使用-top-将会置顶文章，多个置顶文章时，top-定义的值越大，越靠前。"><a href="#使用-top-将会置顶文章，多个置顶文章时，top-定义的值越大，越靠前。" class="headerlink" title="使用 top 将会置顶文章，多个置顶文章时，top 定义的值越大，越靠前。"></a>使用 top 将会置顶文章，多个置顶文章时，top 定义的值越大，越靠前。</h2><hr>
+<p>title: 每天一个linux命令<br>date: 2017-01-23 11:41:48<br>top: 1<br>categories:</p>
+<ul>
+<li>运维<br>tags:</li>
+<li>linux命令</li>
+</ul>
+<hr>
+<h1 id="TP-Link-TL-WR842N-ND"><a href="#TP-Link-TL-WR842N-ND" class="headerlink" title="TP-Link TL-WR842N&#x2F;ND"></a>TP-Link TL-WR842N&#x2F;ND</h1><table>
+<thead>
+<tr>
+<th>V8.0  v8.0</th>
+<th>?</th>
+<th>unsupportable  不可支持</th>
+<th>Only 2M flash (25q16cs1g). SOC Qualcomm Atheros QCA9535. No USB 仅2M闪存（25q16cs1g）。SOC高通Atheros QCA9535.没有USB</th>
+</tr>
+</thead>
+</table>
+<p>寄了</p>
+<p>记一次详细的TP-link 842n  的刷机过程 —-硬改篇</p>
+<p>走走停停，搞了这么久也算是摸清楚这路由器硬改的基本操作了，中间也是一把泪啊，话不多说了进入正题吧</p>
+<p>先手准备</p>
+<ol>
+<li>刀头烙铁一把（我的是可以调温的）</li>
+<li>高温海绵</li>
+<li>高温胶带</li>
+<li>低温焊锡</li>
+<li>吸锡线</li>
+<li>助焊剂（很重要）</li>
+<li>刀片</li>
+<li>尖嘴钳</li>
+<li>8Mflash  或者16m 32m都行</li>
+</ol>
+<p>10.内存HY5DU121622DTP-43</p>
+<p>11.Sop底座一个</p>
+<p>12.编程器一个</p>
+<ol start="13">
+<li>路由器一台，我是在某宝买的二手路由器，一手买不起( ‘-ωก̀ )</li>
+</ol>
+<p>祭奠一下被我练手的路由器，你们辛苦了(●’◡’●)ﾉ</p>
+<p>6台路由器4台躺着了，2台飞线应该可以抢救一下，辛苦你们了( ๑ŏ﹏ ŏ๑ )</p>
+<p>————————————–伤感的话就到这里了————————————————-</p>
+<p>言归正传</p>
+<p>这是我的工具图片</p>
+<p>开始动手了</p>
+<p>烙铁预热先</p>
+<p>我的烙铁我一般预热到290度刚刚好，以前傻没有买控温的，而且烙铁还不熟，前两台路由器就是这么玩完的</p>
+<p>预热的时候我们就动手把外壳拆了，拆了以后就可以看到具体内容了</p>
+<p>开始贴高温胶布，新手建议多贴点，不然到时候一些小零件弄掉了，那就很尴尬了</p>
+<p>然后就开始上助焊剂，均匀抹在两边就行，这个有助于锡的流动</p>
+<p>抹完助焊剂以后开始用堆锡法拆内存，烙铁头吃点焊锡，然后贴着来回拖动，并且另外一只手用刀片开始撬内存，撬好一个以后另外一个就比较简单的了，来回拖动就可以，然后清理焊盘多余的焊锡，请注意堆锡法时间不要太久，不然焊盘会掉，然后就悲剧了</p>
+<p>视频某优有</p>
+<p>二手的就是不耐用啊。。。掉了一个以为悲剧了，后面看了一下是一个空脚没有连接什么，没有什么事（淡定淡定）</p>
+<pre><code>下一步走起走起
+</code></pre>
+<p>对准针脚然后按住中间对比一下前后左右是否正常，这步不能急要耐心，对其以后对角上锡固定，然后加助焊剂来回拖动，视频某优有</p>
+<p>焊接完成 擦擦多余的助焊剂，然后通电，电源灯亮就行了这张图我是插了网线所以三个灯亮</p>
+<p>如果焊接完成发现灯全亮，那么只有两个问题就我这台机为例子，</p>
+<p>1.你的内存虚焊了，上次为了证明没有虚焊这个问题，我还特地买了一个放大镜(。•́︿•̀。)</p>
+<p>2.很坑爹的，内存条颗粒不行，换一个，以前不懂内存都是乱买的，结果十个，一个都用不了，吐血，后面换成海力士就行了。。。。扎心啊</p>
+<p>硬改正常后开刷，晚点再写一下软件部分</p>
+<p>Flash的焊接过程就不贴出来了，内存搞得定flash就是小菜一碟了，记得用编程器写好h大的不死uboot然后再焊接上去</p>
+<p>IP地址设置如下</p>
+<p>完美收工</p>
+<p>基本上硬件就这样就行了，软件部分我下次再单独写一篇，都是坑啊。。。。</p>
+<p>交流技术适当吹水群：667491026   （拒绝大爷公子伸手党）</p>
+<p>By:ITdesk</p>
+<p>2018年4月2日</p>
+<p>   <img src="https://www.right.com.cn/forum/static/image/hrline/1.gif"></p>
+<p>自己写的几篇小帖子不清楚的可以去看下     <a target="_blank" rel="noopener" href="https://www.right.com.cn/forum/thread-332426-1-1.html">传送门     </a></p>
+<h2 id="不过可以继续学习-openwrt"><a href="#不过可以继续学习-openwrt" class="headerlink" title="不过可以继续学习 openwrt"></a>不过可以继续学习 openwrt</h2><h2 id="Installation安装"><a href="#Installation安装" class="headerlink" title="Installation安装"></a>Installation安装</h2><table>
+<thead>
+<tr>
+<th>Version版本</th>
+<th>Model模型</th>
+<th>Supported Current Rel支持的当前版本</th>
+<th>Firmware OpenWrt Install URL标签：OpenWrt Install URL</th>
+<th>Firmware OpenWrt Upgrade URL标签：OpenWrt Upgrade URL</th>
+<th>Firmware OEM Stock URL固件OEM Stock URL</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>v1</td>
+<td>TL-WR842ND</td>
+<td>22.03.5</td>
+<td>Factory image</td>
+<td>Sysupgrade image&#96;&#96;Sysupgrade图像</td>
+<td>OEM Firmware&#96;&#96;OEM固件</td>
+<td>Edit&#96;&#96;编辑</td>
+</tr>
+<tr>
+<td>v2</td>
+<td>TL-WR842ND</td>
+<td>22.03.5</td>
+<td>Factory image</td>
+<td>Sysupgrade image&#96;&#96;Sysupgrade图像</td>
+<td>OEM Firmware&#96;&#96;OEM固件</td>
+<td>Edit&#96;&#96;编辑</td>
+</tr>
+<tr>
+<td>v3</td>
+<td>TL-WR842N</td>
+<td>23.05.0</td>
+<td>Factory image&#96;&#96;factory image</td>
+<td>Sysupgrade image&#96;&#96;Sysupgrade图像</td>
+<td>OEM Firmware&#96;&#96;OEM固件</td>
+<td>Edit&#96;&#96;编辑</td>
+</tr>
+<tr>
+<td>v5V5</td>
+<td>TL-WR842N</td>
+<td>23.05.0</td>
+<td>Factory image</td>
+<td>Sysupgrade image&#96;&#96;Sysupgrade图像</td>
+<td>OEM Firmware&#96;&#96;OEM固件</td>
+<td>Edit&#96;&#96;编辑</td>
+</tr>
+</tbody></table>
+<p>Installation via factory web GUI is possible. Just rename the image file to something short before uploading (openwrt-19.07.2-ath79-generic-tplink_tl-wr842n-v3-squashfs-factory.bin to firmware.bin)→ Install OpenWrt (generic explanation)<br>可以通过工厂WebGUI进行安装。上传前将图像文件重命名为简短的名称（openwrt-19.07.2-ath79-generic-tplink_tl-wr842n-v3-squashfs-factory.bin到firmware.bin）→安装OpenSort（一般解释）</p>
+<h3 id="Flash-recovery-v1闪存-恢复v1"><a href="#Flash-recovery-v1闪存-恢复v1" class="headerlink" title="Flash&#x2F;recovery v1闪存&#x2F;恢复v1"></a>Flash&#x2F;recovery v1闪存&#x2F;恢复v1</h3><p>Using the integrated tftp capability of the router.First, enter failsafe mode:Remove the power plug from the router.Press and hold the WPS&#x2F;RESET button.Insert the power plug without releasing the RESET button, wait a moment for the USB LED to begin to blink.Release the RESET buttonNo LED besides the one for USB (and maybe for attached Ethernet ports) should be lit.The device now uses the IP 192.168.1.86. It repeatedly tries to download a file named: wr842ndv1_tp_recovery.bin from a tftpd server with the IP 192.168.1.66.The following steps will serve an openwrt firmware image to the device:Download an appropriate firmware file from TP-LINK site.You might need a “stripped” firmware version (without “boot” in the name). See bottom of this page for details and a download link.Rename the file, so it matches the name required by the router: wr842ndv1_tp_recovery.binConfigure your PC lan adapter ip address to IP 192.168.1.66 and connect your computer to one of the LAN ports of the router.Install a tftp server, for windows you can download one from <a target="_blank" rel="noopener" href="http://tftpd32.jounin.net/">http://tftpd32.jounin.net/</a> Run the tftp server and browse for the directory that contains the above firmware image. If necessary allow the connection of the server through your PCs firewall, once configured, shutdown the tftp server program, you will launch it again later.If you connect your PC directly to a lan port on the router, be sure to put the router into failsafe mode FIRST (press reset button and plug power cable release reset button after 3 second), and then launch the tftp server, otherwise it might have problems trying to bind to the PC network interface.Right after you launch the tftp server, a couple of blank messages will appear into the log window of the tftp server, this is normal, the third or fourth message will indicate that the process of file transfer is in progress.After some time you will see all LEDs flashing once followed by a normal restart of the routerNow you can install the openwrt factory image of your liking, via the vendor firmware upgrade web page of the router.You could try to flash directly using this method, an openwrt factory image (for this model obviously) to the router, for me it did not work, maybe you have better luck.<br>使用路由器的集成tftp功能。首先，进入故障保护模式：从路由器上拔下电源插头。按住WPS&#x2F;WPS按钮。插入电源插头，但不松开USB按钮，等待USB指示灯开始闪烁。松开“关闭”按钮除了USB（可能还有连接的以太网端口）的LED外，其他LED均不应亮起。设备现在使用IP192.168.1.86。它反复尝试从IP为192.168.1.66的tftpd服务器下载名为wr842ndv1_tp_recovery.bin的文件。以下步骤将为设备提供openwrt固件映像：从TP-LINK站点下载适当的固件文件。您可能需要一个“剥离”固件版本（名称中没有“靴子”）。详情和下载链接见本页底部。重命名该文件，使其与路由器所需的名称匹配：wr842ndv1_tp_recovery.bin将PC LAN适配器IP地址配置为IP192.168.1.66，并将计算机连接到路由器的LAN安装一个tftp服务器，对于windows你可以从http：&#x2F;&#x2F;tftpd32.jounin.net&#x2F;下载一个运行tftp服务器并浏览包含上述固件映像的目录。如果有必要允许通过您的PC防火墙连接服务器，一旦配置，关闭tftp服务器程序，您将在稍后再次启动它。如果您将PC直接连接到路由器上的LAN端口，请务必首先将路由器置于故障保护模式（3秒后按下重置按钮并插入电源线释放重置按钮），然后启动tftp服务器，否则它可能会在尝试绑定到PC网络接口时出现问题。启动tftp服务器后，tftp服务器的日志窗口中会出现几条空白消息，这是正常的，第三条或第四条消息将指示文件传输过程正在进行中。一段时间后，您将看到所有LED闪烁一次，然后正常重启路由器现在你可以通过路由器的厂商固件升级网页安装你喜欢的openwrt工厂镜像。你可以尝试直接使用这种方法闪存，openwrt工厂的形象（对于这种模式显然）到路由器，对我来说，它没有工作，也许你有更好的运气.</p>
+<h3 id="Flash-recovery-v2闪存-恢复v2"><a href="#Flash-recovery-v2闪存-恢复v2" class="headerlink" title="Flash&#x2F;recovery v2闪存&#x2F;恢复v2"></a>Flash&#x2F;recovery v2闪存&#x2F;恢复v2</h3><p>Using the integrated tftp capability of the router.First, enter failsafe mode:I have a question here, why enter failsafe mode, if you are going Failsafe that’s another route, all you have to do is whats next here is a example too <a target="_blank" rel="noopener" href="http://forum.tp-link.com/showthread.php?81462-How-to-recovery-the-router-when-you-bricked-itRemove">http://forum.tp-link.com/showthread.php?81462-How-to-recovery-the-router-when-you-bricked-itRemove</a> the power plug from the router.Press and hold the WPS&#x2F;RESET button.Insert the power plug without releasing the WPS&#x2F;RESET button, wait a moment for the Lock LED to come on solid.Release the WPS&#x2F;RESET buttonConnect PC to one of the router LAN ports.<br>使用路由器的集成tftp功能。首先，进入故障保护模式：我有一个问题在这里，为什么进入故障安全模式，如果你要去故障安全，这是另一个路线，所有你要做的是什么，接下来这里是一个例子太http：&#x2F;&#x2F;forum.tp-link.com&#x2F;showthread.php？81462-阻塞路由器时如何恢复路由器从路由器上拔下电源插头。按住WPS&#x2F;WPS按钮。插入电源插头，但不松开WPS&#x2F;USB按钮，等待片刻，等待锁定指示灯稳定亮起。释放WPS&#x2F;WPS按钮将PC连接到路由器的一个LAN端口。</p>
+<table>
+<thead>
+<tr>
+<th>Device            装置</th>
+<th>IP</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>router IP&#96;&#96; 路由器IP</td>
+<td>192.168.0.86</td>
+</tr>
+<tr>
+<td>set your PC IP&#96;&#96; 设置您的PCIP</td>
+<td>192.168.0.66</td>
+</tr>
+</tbody></table>
+<p>Set PC 设置PC IP:</p>
+<pre><code>ifconfig eth0:1 192.168.0.66/24 up
+</code></pre>
+<p>Router repeatedly tries to download wr842nv2_tp_recovery.bin from a tftpd server running on 192.168.0.66.Install tftpd server:<br>路由器反复尝试从运行在192.168.0.66上的tftpd服务器下载wr842nv2_tp_recovery.bin。安装tftpd服务器：</p>
+<pre><code>pacman -S tftp-hpa
+</code></pre>
+<p>Download TP-LINK firmware to tftp root and rename it to wr842nv2_tp_recovery.bin:<br>下载TP-LINK固件到tftp根目录并将其重命名为wr842nv2_tp_recovery.bin：</p>
+<pre><code>mkdir /srv/tftpd
+cd /srv/tftpd
+wget http://www.tp-link.com/resources/software/TL-WR842ND_V2_130628.zip
+unzip TL-WR842ND_V2_*.zip
+mv wr842ndv2_en_3_14_2_up_boot(130628).bin wr842nv2_tp_recovery.bin
+</code></pre>
+<p>You might need a “stripped” firmware version (without “boot” in the name). See below for details and a download link.Start tftpd server:<br>您可能需要一个“剥离”固件版本（名称中没有“靴子”）。请参阅下面的详细信息和下载链接。启动tftpd服务器：</p>
+<pre><code>systemctl start tftpd.socket
+systemctl start tftpd.service
+</code></pre>
+<p>Router must be in recovery mode before starting tftpd server, otherwise it might have problems trying to bind to the PC network interface.After some time you will see all LEDs flashing once followed by a normal restart of the router.<br>在启动tftpd服务器之前，路由器必须处于恢复模式，否则在尝试绑定到PC网络接口时可能会出现问题。一段时间后，您将看到所有LED闪烁一次，然后正常重启路由器。</p>
+<h3 id="Flash-recovery-v3闪存-恢复v3"><a href="#Flash-recovery-v3闪存-恢复v3" class="headerlink" title="Flash&#x2F;recovery v3闪存&#x2F;恢复v3"></a>Flash&#x2F;recovery v3闪存&#x2F;恢复v3</h3><ul>
+<li>Get OEM firmware file from <a target="_blank" rel="noopener" href="https://www.tp-link.com/en/support/download/tl-wr842n/#Firmware">https://www.tp-link.com/en/support/download/tl-wr842n/#Firmware</a> or from mirror <a target="_blank" rel="noopener" href="https://tplinkforum.pl/t/recovery-dla-routera-tp-link-tl-wr842n-v3/9310.-">https://tplinkforum.pl/t/recovery-dla-routera-tp-link-tl-wr842n-v3/9310.-</a> Rename recovery firmware file to wr842nv3_tp_recovery.bin.- Set up tftp server using IP 192.168.0.66.- Load OEM firmware into router using TFTF client method.- Login into router GUI on 192.168.0.1 with user admin and password admin.- Under menu “System Tools” → “Firmware Upgrade” you can upload Openwrt well known working “factory.bin” image.</li>
+<li>从https：&#x2F;&#x2F;<a target="_blank" rel="noopener" href="http://www.tp-link.com/zh/support/download/tl-wr842n/#Firmware%E6%88%96%E4%BB%8E%E9%95%9C%E5%83%8Fhttps%EF%BC%9A//tplinkforum.pl/t/recovery-dla-routera-tp-link-tl-wr842n-v3/9310%E8%8E%B7%E5%8F%96OEM%E5%9B%BA%E4%BB%B6%E6%96%87%E4%BB%B6%E3%80%82-">www.tp-link.com/zh/support/download/tl-wr842n/#Firmware或从镜像https：//tplinkforum.pl/t/recovery-dla-routera-tp-link-tl-wr842n-v3/9310获取OEM固件文件。-</a> 将恢复固件文件复制到wr842nv3_tp_recovery.bin。- 使用IP192.168.0.66设置tftp服务器。- 使用TFTF客户端方法将OEM固件加载到路由器中。- 使用用户admin和密码admin登录192.168.0.1上的路由器GUI。- 在菜单“系统工具”→“固件升级”你可以上传Openwrt众所周知的工作“factory.bin”的形象。</li>
+</ul>
+<h3 id="Flash-recovery-v5闪存-恢复v5"><a href="#Flash-recovery-v5闪存-恢复v5" class="headerlink" title="Flash&#x2F;recovery v5闪存&#x2F;恢复v5"></a>Flash&#x2F;recovery v5闪存&#x2F;恢复v5</h3><p>Using the integrated tftp capability of the router.<br>使用路由器的集成tftp功能。</p>
+<ul>
+<li>Turn off the router.- Connect PC to one of the router LAN ports.- Set your PC IPv4 address to 192.168.0.225&#x2F;24.- Run any TFTP server on the PC.- Put the recovery firmware on the root directory of TFTP server and name the file tp_recovery.bin- Start the router by pressing power button while holding the WPS&#x2F;Reset button (or both WPS&#x2F;Reset and WIFI buttons)- Router connects to your PC with IPv4 address 192.168.0.2, downloads the firmware, installs it and reboots. LEDs are flashing. Now you have OpenWrt installed.- Change your IPv4 PC address to something in 192.168.1.0&#x2F;24 network or use DHCP to get an address from your OpenWrt router.- Done! You can login to your router via ssh.</li>
+<li>关闭路由器。- 将PC连接到路由器的一个LAN端口。- 将您的PCIPv4地址设置为192.168.0.225&#x2F;24。- 在PC上运行任意TFTP服务器。- 将恢复固件放在TFTP服务器的根目录下，并将文件命名为tp_recovery.bin- 通过按住WPS&#x2F;重置按钮（或WPS&#x2F;重置和WIFI按钮）的同时按下电源按钮来启动路由器- 路由器使用IPv4地址192.168.0.2连接到您的PC，下载固件，安装并重新启动。指示灯闪烁。现在你已经安装了OpenCart。- 将您的IPv4PC地址更改为192.168.1.0&#x2F;24网络中的某个地址，或者使用DHCP从OpenSSL路由器获取地址。- 成交！您可以通过ssh登录到路由器。</li>
+</ul>
+<h3 id="Unbrick-v2"><a href="#Unbrick-v2" class="headerlink" title="Unbrick v2"></a>Unbrick v2</h3><p>Once you are connected via serial cable to router you will see this prompt<br>一旦您通过串行电缆连接到路由器，您将看到此提示</p>
+<pre><code>wasp&gt;
+</code></pre>
+<p>Then type “printenv” to see environment variables:<br>然后输入“printenv”查看环境变量：</p>
+<pre><code>wasp&gt; printenv
+bootargs=console=ttyS0,115200 root=31:02 rootfstype=squashfs init=/sbin/init mtdparts=ath-nor0:128k(u-boot),1024k(kernel),6912k(rootfs),64k(config),64k(art)
+bootcmd=bootm 0x9f020000
+bootdelay=1
+baudrate=115200
+ethaddr=0xba:0xbe:0xfa:0xce:0x08:0x41
+ipaddr=192.168.1.111
+serverip=192.168.1.100
+dir=
+bc=ap123
+lu=tftp 0x81000000 $&#123;dir&#125;u-boot.bin&amp;&amp;erase 0x9f000000 +$filesize;cp.b $fileaddr 0x9f000000 $filesize
+lf=tftp 0x81000000 $&#123;dir&#125;$&#123;bc&#125;-squashfs&amp;&amp;erase 0x9f120000 +$filesize;cp.b $fileaddr 0x9f120000 $filesize
+stdin=serial
+stdout=serial
+stderr=serial
+ethact=eth0
+</code></pre>
+<pre><code>wasp&gt; setenv serverip &lt;TFTP server IP&gt;
+wasp&gt; setenv ipaddr &lt;Temp IP address on my network&gt;
+wasp&gt; tftpboot 0x80000000 openwrt-15.05-ar71xx-generic-tl-wr842n-v2-squashfs-factory.bin
+done
+Bytes transferred = 8126464 (7c0000 hex)
+</code></pre>
+<p>Note the hex value in brackets - “(7c0000 hex)”. If you get different value use your value in lines below, otherwise you may irreversibly brick your device.<br>注意括号中的十六进制值-“（7 c 0000 hex）”。如果您获得不同的值，请在下面的行中使用您的值，否则您可能会不可逆转地砖您的设备。</p>
+<pre><code>wasp&gt; erase 0x9f020000 +0x7c0000
+wasp&gt; cp.b 0x80000000 0x9f020000 0x7c0000
+wasp&gt; bootm 0x9f020000
+</code></pre>
+<h2 id="Back-to-stock-firmware返回到库存固件"><a href="#Back-to-stock-firmware返回到库存固件" class="headerlink" title="Back to stock firmware返回到库存固件"></a>Back to stock firmware返回到库存固件</h2><p>→ generic.uninstall<br>→generic.uninstall</p>
+<p>Warning!This section describes actions that might damage your device or firmware. Proceed with care!<br>警告！本节介绍可能损坏设备或固件的操作。小心行事！</p>
+<p>With the TL-WR842N&#x2F;ND router, there is a catch: the stock firmware is obtained from the OEM: <a target="_blank" rel="noopener" href="http://www.tplink.com/en/support/download/?model=TL-WR842ND">http://www.tplink.com/en/support/download/?model=TL-WR842ND</a>* in case the file name of this firmware file does not contain the word “boot” in it, you can simply revert back to original firmware* in case the file name of this firmware file does contain the word “boot” in it, you need to cut off parts of the image file before flashing it:<br>对于TL-WR 842 N&#x2F;ND路由器，有一个问题：从OEM获得库存固件：http：&#x2F;&#x2F;<a target="_blank" rel="noopener" href="http://www.tplink.com/zh/support/download/%EF%BC%9F%E5%9E%8B%E5%8F%B7=">www.tplink.com/zh/support/download/？型号=</a> TL-WR 842 ND* 如果此固件文件的文件名中不包含单词“靴子”，您可以简单地恢复到原始固件* 如果此固件文件的文件名中包含“靴子”一词，则需要在刷新映像文件之前将其部分删除：</p>
+<p>The following method applies for the V1, V2, V3(EU) and V5(RU) since the bootloader is the same size.<br>以下方法适用于V1、V2、V3（EU）和V5（RU），因为引导加载程序的大小相同。</p>
+<p>An example of an image file with the word “boot” in it is wr842ndv1_en_3_12_25_up_boot(130322).bin.<br>一个包含单词”靴子”的图像文件的示例是wr842ndv1_en_3_12_25_up_boot(130322).bin。</p>
+<p>Cut the first 0x20200 (that is 131,584 &#x3D; 257<em>512) Bytes from original firmware:<br>从原始固件中删除第一个0x20200（即131，584 &#x3D; 257</em>512）字节：</p>
+<pre><code>dd if=orig.bin of=tplink.bin skip=257 bs=512
+</code></pre>
+<p>You should transfer the firmware image to the &#x2F;tmp folder and revert back to original firmware (if available you can flash the firmware via the web interface as well):<br>您应该将固件映像传输到&#x2F;tmp文件夹并恢复到原始固件（如果可用，您也可以通过Web界面刷新固件）：</p>
+<p>Via the safer method using sysupgrade:通过使用sysupgrade的更安全的方法：</p>
+<pre><code>sysupgrade /tmp/tplink.bin
+</code></pre>
+<p>Or you use the mtd method:或者使用mtd方法：</p>
+<pre><code>mtd -r write /tmp/tplink.bin firmware
+</code></pre>
+<p>It is also possible to revert to the stock firmware using the method with tftp described in “recovery”. (You still need the firmware image without the boot part).<br>它也可以恢复到股票固件使用的方法与tftp中所描述的”恢复”。(You仍然需要没有靴子部分的固件映像）。</p>
+<p>OEM TP-Link firmware for the TL-WR842N&#x2F;ND with the boot part removed to revert to the original OEM firmware:* TL-WR842ND V1 TL-WR842ND-V1-stripped.zip* TL-WR842ND V2 TL-WR842ND-V2-stripped.zip<br>TL—WR842 N&#x2F;ND的OEM TP—Link固件，移除靴子部分以恢复原始OEM固件：* TL—WR842ND V1 <a target="_blank" rel="noopener" href="http://www.example.com/">www.example.com</a>* TL—WR842ND V2 <a target="_blank" rel="noopener" href="http://www.example.com/">www.example.com</a></p>
+<h2 id="Hardware-Highlights硬件亮点"><a href="#Hardware-Highlights硬件亮点" class="headerlink" title="Hardware Highlights硬件亮点"></a>Hardware Highlights硬件亮点</h2><table>
+<thead>
+<tr>
+<th>Version版本</th>
+<th>Model模型</th>
+<th>CPU</th>
+<th>CPU MHz</th>
+<th>Flash MB</th>
+<th>RAM MB</th>
+<th>WLAN HardwareWLAN硬件</th>
+<th>WLAN 2.4GHz</th>
+<th>WLAN 5.0GHz无线局域网5.0GHz</th>
+<th>Ethernet 100M ports以太网100M端口</th>
+<th>Ethernet 1Gbit ports以太网1Gbit端口</th>
+<th>Modem现代</th>
+<th>USB portsUSB端口</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>v1</td>
+<td>TL-WR842ND</td>
+<td>Atheros AR7241</td>
+<td>400</td>
+<td>8</td>
+<td>32</td>
+<td>Atheros AR9287</td>
+<td>b&#x2F;g&#x2F;nB&#x2F;g&#x2F;n</td>
+<td>-</td>
+<td>5</td>
+<td>-</td>
+<td>-</td>
+<td>1x 2.0</td>
+<td>Edit&#96;&#96;编辑</td>
+</tr>
+<tr>
+<td>v2</td>
+<td>TL-WR842ND</td>
+<td>Atheros AR9341</td>
+<td>535</td>
+<td>8</td>
+<td>32</td>
+<td>Atheros AR9341</td>
+<td>b&#x2F;g&#x2F;nB&#x2F;g&#x2F;n</td>
+<td>-</td>
+<td>5</td>
+<td>-</td>
+<td>-</td>
+<td>1x 2.0</td>
+<td>Edit&#96;&#96;编辑</td>
+</tr>
+<tr>
+<td>v3</td>
+<td>TL-WR842N</td>
+<td>Qualcomm Atheros QCA9531高通Atheros QCA9531</td>
+<td>650</td>
+<td>16</td>
+<td>64</td>
+<td>Qualcomm Atheros QCA9531高通Atheros QCA9531</td>
+<td>b&#x2F;g&#x2F;nB&#x2F;g&#x2F;n</td>
+<td>-</td>
+<td>5</td>
+<td>-</td>
+<td>-</td>
+<td>1x 2.0</td>
+<td>Edit&#96;&#96;编辑</td>
+</tr>
+<tr>
+<td>v5V5</td>
+<td>TL-WR842N</td>
+<td>MediaTek MT7628NN联发科MT7628NN</td>
+<td>580</td>
+<td>8</td>
+<td>64</td>
+<td>MediaTek MT728NN联发科MT728NN</td>
+<td>b&#x2F;g&#x2F;nB&#x2F;g&#x2F;n</td>
+<td>-</td>
+<td>5</td>
+<td>-</td>
+<td>-</td>
+<td>1x 2.0</td>
+<td>Edit&#96;&#96;编辑</td>
+</tr>
+</tbody></table>
+<h3 id="Detail-info详细信息"><a href="#Detail-info详细信息" class="headerlink" title="Detail info详细信息"></a>Detail info详细信息</h3><p>|  Model  模型                             |   TL-WR842ND                                                         |   TL-WR842N(EU)    TL-WR842N（EU）                                             |   TL-WR842N(RU)    TL-WR842N（RU）   |</p>
+<p>|  Version  版本  |   v1   |   v2   |   v3   |   v5    V5   |<br>| —————————————— | ———————————————————————- | ——————————————————————————– | ————————————– |<br>|  Architecture:   <code>&lt;br/&gt;</code> 体系结构：            |   MIPS 24Kc V7.4                                                     |   MIPS 74Kc V4.12                                                              |   MIPS 24Kc                          |   MIPS 24KEc V5.5   |<br>|  Manufacturer:   <code>&lt;br/&gt;</code> 制造商：              |   Atheros                                                            |   Qualcomm Atheros                                                             |   MediaTek    联发科                 |<br>|  Bootloader:     <code>&lt;br/&gt;</code> 引导加载程序：        |   U-Boot                                                             |   U-Boot?    U-Boot？                                                          |<br>|  System-On-Chip: <code>&lt;br/&gt;</code> 片上系统：            |   Atheros AR7241                                                     |   Atheros AR9341                                                               |   Qualcomm Atheros QCA9531-BL3A    高通Atheros QCA9531—BL3A   |   MediaTek MT7628NN    联发科MT7628NN   |<br>|  CPU Speed:      <code>&lt;br/&gt;</code> CPU速度：             |   400 MHz<code>&lt;br/&gt;</code>  四百MHz的                                                |   535 MHz<code>&lt;br/&gt;</code>  535 MHz的                                                          |   650 MHz<code>&lt;br/&gt;</code>  650 MHz的 |   580 MHz<code>&lt;br/&gt;</code>  580 MHz的 |<br>|  Flash chip:     <code>&lt;br/&gt;</code> 闪存芯片：            |   Spansion S25FL064P (FL064PIF)  <code>&lt;br/&gt;</code>  Spansion S25FL064P（FL064PIF）   |   Winbond 25Q64FV or Spansion S25FL064    Winbond 25Q64FV或Spansion S25FL064   |   Winbond 25Q128CS16    华邦电子25Q128CS16   |    SPI 25Q64CS16   |<br>|  Flash size:     <code>&lt;br/&gt;</code> 闪光灯尺寸：          |     8 MiB                                                            |   16 MiB                                                                       |  8 MiB  |<br>|  RAM chip:       <code>&lt;br/&gt;</code> RAM芯片：             |   A3S56D40FTP -G5                                                    |   Winbond W9425G6JH-5    华邦W 9425 G6 JH-5                                    |   Zentel A3R12E40CBF-8E   |   Zentel A3R12E40DBF-8E    Zentel A3R12E40DBF—8E   |<br>|  RAM size:       <code>&lt;br/&gt;</code> RAM大小：             |   32 MiB                                                             |   64 MiB                                                                       |   64 MiB   |<br>|  Wireless        <code>&lt;br/&gt;</code> 无线                  |   Atheros AR9287-bl1a                                                |   Atheros AR9341                                                               |   Qualcomm Atheros QCA9531    高通Atheros QCA9531   |   MediaTek MT7628NN    联发科MT7628NN   |<br>|  Antenae(s)      <code>&lt;br/&gt;</code> ae（s）               |   2 removables    2例拔除                                            |   2 non-removable    2个不可移动                                               |   2 non-removable    2个不可移动   |<br>|  Ethernet:       <code>&lt;br/&gt;</code> 以太网：              |   4 LAN, 1 WAN 10&#x2F;100  <code>&lt;br/&gt;</code>  4个局域网，1个广域网10&#x2F;100                 |<br>|  USB:            <code>&lt;br/&gt;</code> USB接口：             |   1 x 2.0                                                            |<br>|  Serial:         <code>&lt;br/&gt;</code> 序列号：              |   Yes  <code>&lt;br/&gt;</code>  是的                                                       |</p>
+<h3 id="LAN-port-mapping局域网端口映射"><a href="#LAN-port-mapping局域网端口映射" class="headerlink" title="LAN-port mapping局域网端口映射"></a>LAN-port mapping局域网端口映射</h3><p>This is only tested on a V2 device.这仅在V2设备上进行测试。</p>
+<p>Note: On (EU) version seems to be 1-4, 2-3, 3-2, 4-1, best check before connecting a cable and using cable detection (on luci&gt;network&gt;switch).<br>注意：在（欧盟）版本似乎是1-4，2-3，3-2，4-1，最好在连接电缆和使用电缆检测（在luci网络交换机上）之前进行检查。</p>
+<table>
+<thead>
+<tr>
+<th>chassis port    机箱端口</th>
+<th>internal-port          内孔</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>WAN (blue)&#96;&#96;WAN（蓝色）</td>
+<td>CPU: eth0              CPU：eth0</td>
+</tr>
+<tr>
+<td>1 (yellow)      1（黄色）</td>
+<td>Switch eth1; Port 2    交换机eth1；端口2</td>
+</tr>
+<tr>
+<td>2 (yellow)      2（黄色）</td>
+<td>Switch eth1; Port 3    交换机eth 1;端口3</td>
+</tr>
+<tr>
+<td>3 (yellow)      3（黄色）</td>
+<td>Switch eth1; Port 4    交换机eth1；端口4</td>
+</tr>
+<tr>
+<td>4 (yellow)      4（黄色）</td>
+<td>Switch eth1; Port 1    交换机eth1；端口1</td>
+</tr>
+</tbody></table>
+<p>Note: the default lan interace (VLAN 1) is preconfigured to use eth0 physical interface (cpu untagged in switch configuration). If you want to use more than one VLAN connected to CPU, then CPU port must be tagged. In this case you need to change lan interface from eth0 to eth0.1 (for VLAN id &#x3D; 1). If using luci, remember to do both changes (switch and lan) before applying any of them.<br>注意：默认的局域网接口（VLAN1）已预先配置为使用eth0物理接口（交换机配置中未标记cpu）。如果您想使用多个VLAN连接到CPU，则必须标记CPU端口。在这种情况下，您需要将lan接口从eth0更改为eth0.1（对于VLANid &#x3D; 1）。如果使用luci，记住在应用任何一个之前都要做两个更改（switch和lan）。</p>
+<h3 id="Flash-LayoutFlash布局"><a href="#Flash-LayoutFlash布局" class="headerlink" title="Flash LayoutFlash布局"></a>Flash LayoutFlash布局</h3><p>Please read the article flash.layout for a better understanding. It contains a couple of explanations. Then let’s have a quick view at flash layout of this particular device:<br>请阅读文章flash.layout以更好地理解。它包含了几个解释。然后，让我们有一个快速查看在闪存布局这个特定的设备：</p>
+<table>
+<thead>
+<tr>
+<th>TP-Link WR842ND  Visual Flash Layout OpenWrt 12.09&#96;&#96;   TP-Link WR842ND Visual Flash Layout OpenCart 12.09</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Offset          偏移</td>
+</tr>
+<tr>
+<td>x64KiB Blocks   x64KiB数据块</td>
+</tr>
+<tr>
+<td>TP-Link WR842ND  Flash Layout OpenWrt 12.09&#96;&#96;   TP-Link WR 842 ND闪存布局OpenSort 12.09</td>
+</tr>
+<tr>
+<td>Layer0        层0</td>
+</tr>
+<tr>
+<td>Layer1</td>
+</tr>
+<tr>
+<td>Layer2</td>
+</tr>
+<tr>
+<td>mountpoint</td>
+</tr>
+<tr>
+<td>filesystem    文件系统</td>
+</tr>
+<tr>
+<td>Layer3</td>
+</tr>
+<tr>
+<td>Size in KiB   大小为KiB</td>
+</tr>
+<tr>
+<td>Name          名称</td>
+</tr>
+<tr>
+<td>mountpoint</td>
+</tr>
+<tr>
+<td>filesystem    文件系统</td>
+</tr>
+</tbody></table>
+<p>ART &#x3D; Atheros Radio Test - it contains mac addresses and calibration data for the wifi (EEPROM). If it is missing or corrupt, ath9k won’t come up anymore.<br>ART &#x3D; Atheros无线电测试-它包含wifi的mac地址和校准数据（EEPROM）。如果它丢失或损坏，ath 9 k将不再出现。</p>
+<p>Here is a LibreOffice Calc ODS for better understanding: <a target="_blank" rel="noopener" href="http://ubuntuone.com/5eT1OJweXjF6aa3lMciaLw">http://ubuntuone.com/5eT1OJweXjF6aa3lMciaLw</a> .<br>这里有一个LibreOffice Calc ODS，可以更好地理解：http：&#x2F;&#x2F;ubuntuone.com&#x2F;5eT1OJweXjF6aa3lMciaLw。</p>
+<h3 id="GPIOsGPIO"><a href="#GPIOsGPIO" class="headerlink" title="GPIOsGPIO"></a>GPIOsGPIO</h3><p>→ port.gpioThe AR9341 v3 platform used in the TL-WR842ND provides 23 GPIOs. Some of them are used by the router for status LEDs, buttons and to communicate with the RTL8366RB. The table below shows the results of some investigation:<br>→port.gpioTL-WR 842 ND中使用的AR 9341 v3平台提供23个GPIO。路由器将其中一些用于状态LED、按钮以及与RTL 8366 RB通信。下表显示了一些调查的结果：</p>
+<table>
+<thead>
+<tr>
+<th>GPIO</th>
+<th>Common Name    通用名称</th>
+<th>Usage       使用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>4</td>
+<td>USB Power      USB电源</td>
+<td>set to 0 to turn off the usb port, 1 to turn on  设置为0关闭usb端口，1打开</td>
+</tr>
+</tbody></table>
+<p>AR7241 rev 1 (TL-WR842ND v1):AR 7241版本1（TL-WR 842 ND v1）：</p>
+<table>
+<thead>
+<tr>
+<th>GPIO</th>
+<th>Common Name    通用名称</th>
+<th>Usage       使用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>6</td>
+<td>USB Power      USB电源</td>
+<td>set to 0 to turn off the usb port, 1 to turn on  设置为0关闭usb端口，1打开</td>
+</tr>
+</tbody></table>
+<h3 id="Photos照片"><a href="#Photos照片" class="headerlink" title="Photos照片"></a>Photos照片</h3><h4 id="Opening-the-Case打开机箱"><a href="#Opening-the-Case打开机箱" class="headerlink" title="Opening the Case打开机箱"></a>Opening the Case打开机箱</h4><p>Loosen the screws under the two rubber foots at the back of the device before (forcefully) pulling the upper and lower shelfs apart.<br>在（用力）拉开上、下搁板之前，松开设备背面两个橡胶底脚下的螺钉。</p>
+<h4 id="Serial-connector串行连接器"><a href="#Serial-connector串行连接器" class="headerlink" title="Serial connector串行连接器"></a>Serial connector串行连接器</h4><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>TL-WR842ND v1.0 Serial-InterfaceTL-WR 842 ND v1.0串行接口</td>
+<td>TL-WR842ND v2.1 Serial-InterfaceTL-WR 842 ND v2.1串行接口</td>
+<td>TL-WR842N(RU) v3 Serial-InterfaceTL-WR 842 N（RU）v3串行接口</td>
+<td>TL-WR842N(RU) v5TL-WR842N（RU）v5</td>
+</tr>
+</tbody></table>
+<h3 id="Serial串行"><a href="#Serial串行" class="headerlink" title="Serial串行"></a>Serial串行</h3><h4 id="Pinout引脚说明"><a href="#Pinout引脚说明" class="headerlink" title="Pinout引脚说明"></a>Pinout引脚说明</h4><table>
+<thead>
+<tr>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>V1</th>
+<th>V2.1    v2.1</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>TX</td>
+<td>RX</td>
+<td>GND</td>
+<td>VCC</td>
+<td>SJ1</td>
+<td>JP1</td>
+</tr>
+</tbody></table>
+<p>Pin 1 is clearly marked on the board.引脚1在板上有明确的标记。</p>
+<p>To get the serial connection work reliably, you may have to connect a 10k pullup resistor between the TX and the 3.3V pin (same problem as described in TL-MR3420). For some users the V2.1 models did not need this pullup resistor.<br>为了使串行连接可靠地工作，您可能必须在TX和3.3V引脚之间连接一个10 k上拉电阻（与TL-MR 3420中描述的问题相同）。对于某些用户，V2.1型号不需要此上拉电阻。</p>
+<p>The TX pin is connected via a 10k resistor to ground and via a 100nF capacitor to the serial output of the SoC. This gives a 2.5Vpp swing centered on ground. While this may work with some serial adapters, it is on the low side for most. An advantage of this connection scheme is that it protects the serial output to some degree.<br>TX引脚通过一个10k电阻接地，并通过一个100nF电容连接到SoC的串行输出。这提供了一个以地为中心的2.5Vpp摆幅。虽然这可能适用于某些串行适配器，但对于大多数串行适配器来说，这是偏低的。这种连接方案的一个优点是它在一定程度上保护了串行输出。</p>
+<p>For WR-842N v3, to activate serial interface, you need to solder two resistors (or jumpers) according this photo (marked as red circles):<br>对于WR-842 N v3，要激活串行接口，您需要根据此照片焊接两个电阻（或跳线）（标记为红色圆圈）：</p>
+<p>The right settings for accessing the serial console are as follows:<br>访问串行控制台的正确设置如下：</p>
+<p>Bits per second: 115200Data bits: 8Stop bits: 1Parity: NoneFlow control: None<br>每秒比特数：115200数据位数：8停止位：1奇偶校验：无流量控制：无</p>
+<p>Password to get into uboot prompt is tplPassword to get root login is 5up<br>进入uboot提示符的密码是tpl获得root登录的密码是5up</p>
+<p>For TL-WR842n v.3 serial console&#x2F;ssh access Login: root Password: sohoadmin<br>用于TL-WR 842 n v.3串行控制台&#x2F;ssh访问登录名：root用户名：</p>
+<h3 id="Power功率"><a href="#Power功率" class="headerlink" title="Power功率"></a>Power功率</h3><h4 id="General一般"><a href="#General一般" class="headerlink" title="General一般"></a>General一般</h4><p>This device has two main power regulators, one 12V→3V3 for the CPU, memory, wireless and one 12V→5V for USB.<br>该设备有两个主电源调节器，一个12V→3V3用于CPU，内存，无线和一个12V→5V用于USB。</p>
+<h4 id="Main-3V3-Power主3V3电源"><a href="#Main-3V3-Power主3V3电源" class="headerlink" title="Main 3V3 Power主3V3电源"></a>Main 3V3 Power主3V3电源</h4><p>This is delivered by a switching regulator with up to 2A at 3V3 output. Power is drawn from external input over one 1A Schottky diode (SS14), with a voltage drop of max .45V at 1A. It should be perfectly safe to draw an additional 100-200mA for your own additions from 3V3.<br>这是由一个开关稳压器提供高达2A的3V 3输出。电源是从外部输入超过一个1A肖特基二极管（SS 14），与最大的压降0.45V在1A。它应该是完全安全的提请额外的100- 200毫安为您自己的补充从3V 3。</p>
+<h4 id="USB-PowerUSB电源"><a href="#USB-PowerUSB电源" class="headerlink" title="USB PowerUSB电源"></a>USB PowerUSB电源</h4><p>USB power is derived from the 12V input over two SS14 Schottky diodes, the one also feeding the 3V3 regulator and an additional one. The output regulator is capable of delivering up to 1.5A, but there is a USB current switch&#x2F;limiter that limits output current to 1A (and goes into 50% duty-cycle on&#x2F;off in addition after about 200ms on short-circuit).<br>USB电源来自两个SS 14肖特基二极管上的12 V输入，其中一个还为3V 3稳压器和另一个供电。输出调节器能够提供高达1.5A的电流，但有一个USB电流开关&#x2F;限制器，将输出电流限制在1A（并且在短路约200 ms后进入50%占空比开&#x2F;关）。</p>
+<p>It should be fine to draw something like 700mA long-term from 5V USB and up to a bit less than 1A briefly. This is enough to spin-up and power most external 2.5“ USB HDDs. You can try it out. The worst that can happen is that it does not work. The USB power-switch is fully protected and the regulator has reserves, as it uses an external PNP power transistor and has its own over-current protection at 1.1A.<br>从5V USB长期汲取700mA之类的电流，并短暂地汲取不到1A的电流，应该没问题。这足以启动大多数外部2.5”USB HDD并为其供电。你可以试试最糟糕的情况是它不起作用。USB电源开关受到充分保护，稳压器具有储备，因为它使用外部PNP功率晶体管，并具有1.1A的过流保护。</p>
+<p>I did run it at 750mA current draw from USB for half an hour without the regulator getting too warm. What I measured was 10C below the main SoC. The external 12V&#x2F;1A PSU should also be fine with these loads. Still, if anything blows up in your face, or your house burns down, I am not responsible…<br>我确实运行它在750毫安的电流提请从usb半个小时没有调节器变得太暖。我测量的是低于主SoC的10 C。外部12 V&#x2F;1A PSU也应该可以承受这些负载。不过，如果有什么东西在你面前爆炸，或者你的房子被烧了，我可不负责…</p>
+<h2 id="Tags"><a href="#Tags" class="headerlink" title="Tags"></a>Tags</h2><p>How to add tags<br>如何添加标签</p>
+<p><a target="_blank" rel="noopener" href="https://openwrt.org/tag/ar9341?do=showtag&tag=ar9341" title="tag:ar9341"></a><a target="_blank" rel="noopener" href="https://openwrt.org/tag/ar9341?do=showtag&tag=ar9341" title="tag:ar9341"> ar9341 AR9341</a><a target="_blank" rel="noopener" href="https://openwrt.org/tag/fastethernet?do=showtag&tag=fastethernet" title="tag:fastethernet"></a><a target="_blank" rel="noopener" href="https://openwrt.org/tag/fastethernet?do=showtag&tag=fastethernet" title="tag:fastethernet"> fastethernet FastEthernet</a><a target="_blank" rel="noopener" href="https://openwrt.org/tag/5port?do=showtag&tag=5port" title="tag:5port"></a><a target="_blank" rel="noopener" href="https://openwrt.org/tag/5port?do=showtag&tag=5port" title="tag:5port"> 5port 5端口</a><a target="_blank" rel="noopener" href="https://openwrt.org/tag/usb?do=showtag&tag=usb" title="tag:usb"></a><a target="_blank" rel="noopener" href="https://openwrt.org/tag/usb?do=showtag&tag=usb" title="tag:usb"> usb USB</a><a target="_blank" rel="noopener" href="https://openwrt.org/tag/1usb?do=showtag&tag=1usb" title="tag:1usb"></a><a target="_blank" rel="noopener" href="https://openwrt.org/tag/1usb?do=showtag&tag=1usb" title="tag:1usb"> 1usb 1USB</a><a target="_blank" rel="noopener" href="https://openwrt.org/tag/usb2.0?do=showtag&tag=usb2.0" title="tag:usb2.0"></a><a target="_blank" rel="noopener" href="https://openwrt.org/tag/usb2.0?do=showtag&tag=usb2.0" title="tag:usb2.0"> usb2.0 USB2.0</a><a target="_blank" rel="noopener" href="https://openwrt.org/tag/serial?do=showtag&tag=serial" title="tag:serial"></a><a target="_blank" rel="noopener" href="https://openwrt.org/tag/serial?do=showtag&tag=serial" title="tag:serial"> serial 串行</a><a target="_blank" rel="noopener" href="https://openwrt.org/tag/integrated?do=showtag&tag=integrated" title="tag:integrated"></a><a target="_blank" rel="noopener" href="https://openwrt.org/tag/integrated?do=showtag&tag=integrated" title="tag:integrated"> integrated 集成</a><a target="_blank" rel="noopener" href="https://openwrt.org/tag/802.11bgn?do=showtag&tag=802.11bgn" title="tag:802.11bgn"></a><a target="_blank" rel="noopener" href="https://openwrt.org/tag/802.11bgn?do=showtag&tag=802.11bgn" title="tag:802.11bgn"> 802.11bgn</a><a target="_blank" rel="noopener" href="https://openwrt.org/tag/1wnic?do=showtag&tag=1wnic" title="tag:1wnic"></a><a target="_blank" rel="noopener" href="https://openwrt.org/tag/1wnic?do=showtag&tag=1wnic" title="tag:1wnic"> 1wnic</a><a target="_blank" rel="noopener" href="https://openwrt.org/tag/ar9287?do=showtag&tag=ar9287" title="tag:ar9287"></a><a target="_blank" rel="noopener" href="https://openwrt.org/tag/ar9287?do=showtag&tag=ar9287" title="tag:ar9287"> ar9287 AR9287</a><a target="_blank" rel="noopener" href="https://openwrt.org/tag/ath9k?do=showtag&tag=ath9k" title="tag:ath9k"></a><a target="_blank" rel="noopener" href="https://openwrt.org/tag/ath9k?do=showtag&tag=ath9k" title="tag:ath9k"> ath9k</a><a target="_blank" rel="noopener" href="https://openwrt.org/tag/2ant?do=showtag&tag=2ant" title="tag:2ant"></a><a target="_blank" rel="noopener" href="https://openwrt.org/tag/2ant?do=showtag&tag=2ant" title="tag:2ant"> 2ant</a><a target="_blank" rel="noopener" href="https://openwrt.org/tag/detachableantenna?do=showtag&tag=detachableantenna" title="tag:detachableantenna"></a><a target="_blank" rel="noopener" href="https://openwrt.org/tag/detachableantenna?do=showtag&tag=detachableantenna" title="tag:detachableantenna"> detachableantenna 可变天线</a><a target="_blank" rel="noopener" href="https://openwrt.org/tag/32ram" title="tag:32ram"></a><a target="_blank" rel="noopener" href="https://openwrt.org/tag/32ram" title="tag:32ram"> 32RAM</a><a target="_blank" rel="noopener" href="https://openwrt.org/tag/8flash" title="tag:8flash"></a><a target="_blank" rel="noopener" href="https://openwrt.org/tag/8flash" title="tag:8flash"> 8Flash</a><a target="_blank" rel="noopener" href="https://openwrt.org/tag/mips?do=showtag&tag=mips" title="tag:mips"></a><a target="_blank" rel="noopener" href="https://openwrt.org/tag/mips?do=showtag&tag=mips" title="tag:mips"> mips MIPS</a><a target="_blank" rel="noopener" href="https://openwrt.org/tag/mips32?do=showtag&tag=mips32" title="tag:mips32"></a><a target="_blank" rel="noopener" href="https://openwrt.org/tag/mips32?do=showtag&tag=mips32" title="tag:mips32"> mips32 MIPS32</a><a target="_blank" rel="noopener" href="https://openwrt.org/tag/24kc?do=showtag&tag=24kc" title="tag:24kc"></a><a target="_blank" rel="noopener" href="https://openwrt.org/tag/24kc?do=showtag&tag=24kc" title="tag:24kc"> 24kc</a><a target="_blank" rel="noopener" href="https://openwrt.org/tag/ar7241?do=showtag&tag=ar7241" title="tag:ar7241"></a><a target="_blank" rel="noopener" href="https://openwrt.org/tag/ar7241?do=showtag&tag=ar7241" title="tag:ar7241"> ar7241 AR7241</a><a target="_blank" rel="noopener" href="https://openwrt.org/tag/12v_powered?do=showtag&tag=12v_powered" title="tag:12v_powered"></a><a target="_blank" rel="noopener" href="https://openwrt.org/tag/12v_powered?do=showtag&tag=12v_powered" title="tag:12v_powered"> 12v powered 12v供电</a></p>
+<ul>
+<li>Last modified:  最后修改日期： 2024&#x2F;04&#x2F;29 22:042024&#x2F;04&#x2F;29 22：04</li>
+<li>by 通过 jalakas</li>
+</ul>
+<h2 id="笔记"><a href="#笔记" class="headerlink" title="笔记"></a>笔记</h2><p>我应该是v8 Qualcomm Atheros QCA9535   v3是 QCA9531  </p>
+<p><strong>第一：QCA9531介绍</strong></p>
+<p>QCA9531是一款高度集成且功能丰富的IEEE 802.11n 2x2 2.4 GHz的WiFi芯片，SKYLAB基于QCA9531方案研发推出两款QCA9531的WiFi模块。</p>
+<p>SKW97&#x2F;SKW99都是基于QCA9531方案研发推出的AP&#x2F;Router<br>WiFi模块，性能优异，双天线设计，2T2R模式下，支持高达300Mbps<br>PHY数据传输速率，工业级设计，具有功耗低，发热量低的特点，支持LAN端口和WAN端口，且支持较多的3G&#x2F;4G模块型号。</p>
+<p>模块只需要一个外部3.3V电源供电即可正常工作，模块支持桥接模式、AP客户端模式、网关模式，符合FCC &#x2F; CE &#x2F; IC &#x2F; RoHS认证标准。</p>
+<p><strong>第三：QCA9531 WiFi模块特点</strong></p>
+<p>符合IEEE 802.11 b&#x2F;g&#x2F;n无线标准协议；</p>
+<p>在2T2R模式下，支持300Mbps PHY数据传输速率；</p>
+<p>DDR2内存高达1024Mb，Flash内存可扩展至128Mb；</p>
+<p>模块支持4个LAN端口和1个WAN端口；</p>
+<p>支持UART WiFi透明传输</p>
+<p>模块自带的USB接口支持4G模块，兼容市面上主流的4G模块。除此之外，还可以接USB磁盘、USB 3G &#x2F; 4G加密狗、USB摄像头等USB 2.0从机设备；</p>
+<p>安全性方面：WEP64 &#x2F; 128，TKIP，AES，WPA，WPA2，WAPI；</p>
+<p>可提供OpenWRT SDK 技术支持；</p>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 3400639399@qq.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">赏</a>
+</p>
+
+
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2016-2020 FTyiming
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>喜欢就点赞,疼爱就打赏</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">支付宝</label></span><span><label><input type="radio" name="pay" value="weixin">微信</label></span>
+    </div>
+</div>
+
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+<div class="mobile-menus-out" >
+
+</div>
+<div class="mobile-menus">
+    
+    
+    
+    
+    <a class="dynamic-menu " target="_blank"  href="https://github.com/FT1142558190">github</a>
+    
+</div>
+
+
+</html>
