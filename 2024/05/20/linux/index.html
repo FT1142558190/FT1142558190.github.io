@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>about | FTyiming</title>
-  <meta name="keywords" content="">
-  <meta name="description" content="about | FTyiming">
+  <title>linux | FTyiming</title>
+  <meta name="keywords" content=" linux ">
+  <meta name="description" content="linux | FTyiming">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="学习计划 宿舍空调 压缩机功耗大 -压缩机 高压管 低压管 毛细管 蒸发器 制冷剂 吸收式制冷体积大 -溴化 电子控制模块 wifi模块 或者蓝牙模块已经非常成熟   家用太阳能发电系统搭建  材料成本高 -太阳能发电板 面积未知 -逆变器 整流桥 PN节 空气开关 各种电路保护 不会 -户外电源 至少20Ah  2000多块 -能否并网把电卖给公网 理论上不可能回本，所以只能是玩玩 材料全是二手">
 <meta property="og:type" content="website">
@@ -488,19 +488,34 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
+        <article id="post-linux" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">about</h1>
+        <h1 class="article-title">linux</h1>
     
     <div class="article-meta">
         
         
         
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="软路由">软路由</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color1">linux</a>
+            
+        </span>
         
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2024-03-24 18:44:17'>2024-03-22 13:24</time>
+            发布时间 : <time class="date" title='最后更新: 2024-05-17 16:43:36'>2024-05-20 22:25</time>
         
     </div>
     <div class="article-meta">
@@ -522,7 +537,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92"><span class="toc-text">学习计划</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%98%A5-%E5%AE%89%E5%85%A8%E9%97%AE%E9%A2%98"><span class="toc-text">😥 安全问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%98%95-%E6%94%BE%E5%BC%83"><span class="toc-text">😕 放弃</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%9D%A4%EF%B8%8FContributing-Guide"><span class="toc-text">❤️Contributing Guide</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%A4%A1Disclaimers"><span class="toc-text">🤡Disclaimers</span></a></li></ol>
+        
     
 <style>
     .left-col .switch-btn,
@@ -538,103 +553,88 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="学习计划"><a href="#学习计划" class="headerlink" title="学习计划"></a><strong>学习计划</strong></h2><ol>
-<li><p>宿舍空调</p>
-<pre><code class="apache">压缩机功耗大
--压缩机 高压管 低压管 毛细管 蒸发器 制冷剂
-吸收式制冷体积大
--溴化
-电子控制模块 wifi模块 或者蓝牙模块已经非常成熟
+        <p><a target="_blank" rel="noopener" href="https://togetek-docs.readthedocs.io/zh/latest/2.hardware/1.%E4%B8%80%E8%B5%B7%E5%AD%A6OpenWrt%28%E5%9F%BA%E7%A1%80%E7%AF%87%29/docs/06.OpenWrt-%E7%83%A7%E5%BD%95mac%E5%9C%B0%E5%9D%80.html">https://togetek-docs.readthedocs.io/zh/latest/2.hardware/1.%E4%B8%80%E8%B5%B7%E5%AD%A6OpenWrt%28%E5%9F%BA%E7%A1%80%E7%AF%87%29/docs/06.OpenWrt-%E7%83%A7%E5%BD%95mac%E5%9C%B0%E5%9D%80.html</a></p>
+<p>在Linux系统中，<code>/proc</code> 是一个特殊的文件系统，它提供了关于系统硬件和正在运行的进程的信息。<code>/proc</code> 文件系统下的文件通常是只读的，并且其内容是由内核动态生成的。</p>
+<p><code>/proc/mtd</code> 这个路径并不是Linux内核标准提供的一个目录或文件。但是，在某些嵌入式系统（如OpenWrt）中，你可能会看到与MTD（Memory Technology Device）相关的目录或文件，因为MTD是Linux内核中用于管理NAND和NOR闪存设备的子系统。</p>
+<p>例如，在OpenWrt系统中，你可能会在 <code>/proc/mtddevice/</code> 或 <code>/proc/mtdinfo/</code>（注意这里的路径可能与 <code>/proc/mtd</code>不同）下找到与MTD相关的信息。这些目录或文件包含了关于MTD设备的详细信息，如设备名称、大小、擦除块大小等。</p>
+<p>要查看与MTD相关的信息，你应该先检查系统中是否存在与MTD相关的目录或文件。你可以使用 <code>ls /proc</code> 或 <code>find /proc -name &#39;*mtd*&#39;</code> 来查找相关的目录或文件。然后，你可以使用 <code>cat</code> 命令来查看这些文件的内容，例如：</p>
+<pre><code class="bash">cat /proc/mtddevice/mtd0
 </code></pre>
-</li>
-<li><p>家用太阳能发电系统搭建</p>
-<pre><code class="apache">
-材料成本高
--太阳能发电板 面积未知
--逆变器 整流桥 PN节 空气开关 各种电路保护 不会
--户外电源 至少20Ah  2000多块
--能否并网把电卖给公网
-理论上不可能回本，所以只能是玩玩
-材料全是二手只要600(无户外电源)
+<p>或者</p>
+<pre><code class="bash">cat /proc/mtdinfo/mtd0
 </code></pre>
-</li>
-<li><p>家用私人网盘成本高</p>
-<pre><code class="apache">市面上成熟的产品，绿联的NAS，一台电脑就可以的黑群晖，但是基本的计算机网络通信原理不会。
-        理想功能
-           1.功耗低，可以有很多sata硬盘接口
-           2.只要在同一局域网内就可以实现联通，上传和下载的速率只被路由器限制
-           3.什么是他妈的的单片机 树莓派 什么是他妈的ios windows 安卓 liuxs
-           4.dockers这种轻量化的虚拟环境如何完成自动化任务  比如 阿里云盘签到 如何完成多线程高并发的自动化任务
-           5.公网ip到底怎么用，怎么申请
+<p>注意：上述路径只是示例，实际系统中的路径可能会有所不同。你应该根据你的系统来确定正确的路径。</p>
+<p>另外，你也可以查看系统的文档或向系统供应商寻求帮助，以获取关于MTD和相关文件路径的更多信息。</p>
+<p><code>hexdump</code> 是一个在 Unix 和 Linux 系统中常用的命令，用于显示文件或输入数据的十六进制和 ASCII 编码的转储。当你使用 <code>-C</code> 选项时，<code>hexdump</code> 会以规范的十六进制和 ASCII 格式显示数据。</p>
+<p><code>/dev/mtd2</code> 通常是一个MTD（Memory Technology Device）设备的设备文件，MTD是Linux内核中用于管理NAND和NOR闪存设备的子系统。<code>/dev/mtd2</code> 可能是系统中的第二个MTD设备。</p>
+<p>但是，直接对 <code>/dev/mtd2</code> 使用 <code>hexdump</code> 可能会遇到一些问题，因为MTD设备通常不是直接可读的。MTD设备通常通过MTD分区（如 <code>/dev/mtdblockX</code>）来访问，这些分区设备提供了对MTD设备上不同分区的访问。</p>
+<p>如果你想查看MTD设备的某个分区的内容，你应该使用对应的分区设备文件，例如 <code>/dev/mtdblock2</code>（注意不是 <code>/dev/mtd2</code>）。</p>
+<p>但是，如果你确实想要尝试直接对 <code>/dev/mtd2</code> 使用 <code>hexdump</code>，并且你知道这是安全的（比如你知道这个设备当前没有被其他进程使用，并且你知道如何解释其内容），你可以这样做：</p>
+<pre><code class="bash">hexdump -C /dev/mtd2
 </code></pre>
-</li>
-<li><p>在这种家庭宽带下，公用的IP地址能否保证网络安全</p>
-</li>
-<li><p>数学建模？</p>
-<pre><code class="apache">重要吗，很重要吗
+<p>但是，请注意，这可能会产生大量的输出，并且如果你没有正确的权限，这个命令可能会失败。如果你没有足够的权限，你可能需要使用 <code>sudo</code>：</p>
+<pre><code class="bash">sudo hexdump -C /dev/mtd2
 </code></pre>
-</li>
-<li><p>comsol 基础不牢学不了一点</p>
-</li>
-<li><p>漫长的电子模块学习，数电，模电。👀️ 积累维修经验</p>
-</li>
-<li><p>漫长代码学习，完善网站，学习新的功能</p>
-</li>
-<li><p>fros是一款<strong>路由器上网行为管理系统</strong>，可以过滤游戏、视频等几百款app，防沉迷功能可以基于流量、时长自动控制app联网，可以合理安排小孩上网时间</p>
-</li>
-</ol>
-<h2 id="😥-安全问题"><a href="#😥-安全问题" class="headerlink" title="😥 安全问题"></a>😥 安全问题</h2><pre><code class="commandline">是个主要问题
-
+<p>但是，再次强调，直接对MTD设备使用 <code>hexdump</code> 可能是不安全的，并且通常不是必要的。你应该尝试使用MTD分区设备文件来访问MTD设备上的数据。</p>
+<p><strong>读取factory分区的值</strong><a target="_blank" rel="noopener" href="https://togetek-docs.readthedocs.io/zh/latest/2.hardware/1.%E4%B8%80%E8%B5%B7%E5%AD%A6OpenWrt%28%E5%9F%BA%E7%A1%80%E7%AF%87%29/docs/06.OpenWrt-%E7%83%A7%E5%BD%95mac%E5%9C%B0%E5%9D%80.html#id7" title="永久链接至代码">¶</a></p>
+<pre><code>
 </code></pre>
-<h2 id="😕-放弃"><a href="#😕-放弃" class="headerlink" title="😕 放弃"></a>😕 放弃</h2><p><del>安卓逆向，手机这个东西用不习惯太封闭了，不如研究研究树莓派 单片机</del></p>
-<p><del>我与英语不共戴天之仇</del></p>
-<h2 id="❤️Contributing-Guide"><a href="#❤️Contributing-Guide" class="headerlink" title="❤️Contributing Guide"></a>❤️Contributing Guide</h2><p>若发现程序存在任何 bug 或有好的想法，欢迎提交 Issue，提交 bug 反馈时需要带上报错信息截图（截全）以及对应 log 文件，并说明触发条件</p>
-<p>提交 Issue 时应当遵守 <strong><a target="_blank" rel="noopener" href="https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md">提问的智慧</a></strong> 以及<a target="_blank" rel="noopener" href="https://github.com/tangx/Stop-Ask-Questions-The-Stupid-Ways">别像弱智一样提问</a>，切勿以 <code>不懂</code>、<code>萌新问个问题</code>、<code>小白啥也不会浇浇</code>、<code>整个xxx呗</code>作为标题，否则一律忽略</p>
-<p><a target="_blank" rel="noopener" href="https://github.com/SocialSisterYi/CxKitty/issues">Issue</a> 为本项目的唯一反馈渠道，任何包括不限于在 QQ、B站私信、Telegram、微信 的提问一律忽略</p>
-<h2 id="🤡Disclaimers"><a href="#🤡Disclaimers" class="headerlink" title="🤡Disclaimers"></a>🤡Disclaimers</h2><ul>
-<li>本项目以 <a target="_blank" rel="noopener" href="https://github.com/SocialSisterYi/CxKitty/blob/main/LICENSE">GPL-3.0 License</a> 作为开源协议，这意味着你需要遵守相应的规则</li>
-<li>本项目仅适用于<strong>学习研究</strong>，任何人不得以此用于<strong>盈利</strong></li>
-<li>使用本项目造成的任何后果与本人无关</li>
-</ul>
-<p>免责申明<br>请注意以下条款和条件，以规避您的风险和损失。如果您不同意本声明，请立即离开本网站。如果您继续访问和使用本网站，则表示您已经阅读、理解并同意接受本声明的所有条款和条件。</p>
-<ol>
-<li>本网站所提供的任何内容和服务仅供用户个人学习、研究和测试之用，不得作为商业用途。本网站的所有信息未来可能会随时更新和更改，不保证其准确性、完整性.及时性、适用性、稳定性和可靠性 ；</li>
-<li>不得利用本服务故意或者过失的从事危害国家安全和社会公共利益、扰乱经济秩序和社会秩序、侵犯他人合法权益等法律、行政法规禁止的活动，请勿输入、生成并发布、输出、传播涉及国家法律法规禁止以下内容：</li>
-</ol>
-<ul>
-<li>危害国家安全，泄露国家秘密，颠覆国家政权，破坏国家统一的；</li>
-<li>损害国家荣誉和利益的；</li>
-<li>歪曲、丑化、亵渎、否定英雄烈士事迹和精神，以侮辱、诽谤或者其他方式侵害英雄烈士的姓名、肖像、名誉、荣誉的；</li>
-<li>宣扬恐怖主义、极端主义或者煽动实施恐怖活动、极端主义活动的；</li>
-<li>煽动民族仇恨、民族歧视，破坏民族团结的；</li>
-<li>破坏国家宗教政策，宣扬邪教和封建迷信的；</li>
-<li>散布谣言，扰乱经济秩序和社会秩序的；</li>
-<li>散布淫秽、色情、赌博、暴力、凶杀、恐怖或者教唆犯罪的；</li>
-<li>侮辱或者诽谤他人，侵害他人名誉、隐私和其他合法权益的；</li>
-<li>含有虚假、有害、胁迫、侵害他人隐私、骚扰、侵害、中伤、粗俗、猥亵、或其它道德上令人反感的内容；</li>
-<li>中国法律、法规、规章、条例以及任何具有法律效力之规范所限制或禁止的其它内容。</li>
-</ul>
-<ol start="3">
-<li>您同意并承诺，在使用本服务时，严格遵守国家及行业相关法律法规要求，不上传国家及金融行业涉密文件及数据、不上传非公开的资料及数据、客户资料、支付清算基础设施或系统的核心代码等内容，不会输入个人隐私信息；</li>
-<li>为最大限度限制敏感内容，并保证服务持续，我们会对敏感内容做过滤或删除处理，不能保证回复的完整性，同时会记录您的IP，如发现违法使用，本站将全力配合有关部门予以打击。</li>
-<li>为保护您的个人隐私，您的个人数据，全部保存在您的个人设备中，更换浏览器和清理浏览器缓存，都会导致历史提问数据一并被清理，如有重要信息，请及时做好备份。</li>
-<li>您确认并知悉本服务生成的所有内容都是由人工智能模型生成，所以可能会出现意外和错误的情况，请确保检查事实，并且其生成的内容不代表我们的态度或观点，仅为提供更多信息，也不构成任何建议或承诺。对于您根据本服务提供的信息所做出的一切行为，除非另有明确的书面承诺文件，否则我们不承担任何形式的责任。</li>
-<li>不论在何种情况下，本网站均不对由于网络连接故障，电力故障，罢工，劳动争议，暴乱，起义，骚乱，火灾，洪水，风暴，爆炸，不可抗力，战争，政府行为，国际、国内法院的命令，黑客攻击，互联网病毒，网络运营商技术调整，政府临时管制或任何其他不能合理控制的原因而造成的本服务不能访问、服务中断、信息及数据的延误、停滞或错误，不能提供或延迟提供服务而承担责任。<br>本网站不承担您就使用本服务所提供的信息或任何链接所引致的任何直接、间接、附带、从属、特殊、继发、惩罚性或惩戒性的损害赔偿。</li>
-</ol>
-<pre><code> ███████████ ███████████  █████████              ███                   ███
- ░░███░░░░░░█░█░░░███░░░█ ███░░░░░░              ░░░                   ░░░
- ░███   █ ░ ░   ░███  ░ ░███ ██████  █████ ████ ████  █████████████   ████  ████████    ███████
- ░███████       ░███    ░███░███░███░░███ ░███ ░░███ ░░███░░███░░███ ░░███ ░░███░░███  ███░░███
- ░███░░░█       ░███    ░███░███░███ ░███ ░███  ░███  ░███ ░███ ░███  ░███  ░███ ░███ ░███ ░███
- ░███  ░        ░███    ░███░░░ ░███ ░███ ░███  ░███  ░███ ░███ ░███  ░███  ░███ ░███ ░███ ░███
- █████          █████   ░░█████████  ░░███████  █████ █████░███ █████ █████ ████ █████░░███████
-░░░░░          ░░░░░     ░░░░░░░░░    ░░░░░███ ░░░░░ ░░░░░ ░░░ ░░░░░ ░░░░░ ░░░░ ░░░░░  ░░░░░███
-                                      ███ ░███                                         ███ ░███
-                                      ░░██████                                         ░░██████
-                                        ░░░░░░                                           ░░░░░░
+<pre><code>hexdump -C /dev/mtd2
 </code></pre>
-<p>＋v FTyiming 有其他问题请联系作者欢迎一起交流讨论Q群<del>457452029</del><br>本文件仅供交流学习讨论，作者一切免责。请在24小时内删除，如有侵权请联系作者<br>声明：仅供内部学习交流，不保证能否正常运行，请勿用于正常教师课程，由此造成的任何后果，<br>包括但不限于清空学习记录、取消学习资格、学习成绩不及格、全校通报、取消学籍、行政处罚、刑事诉讼等，<br>由使用者负责，作者不支持也不鼓励用于网络技术学习以外的其他用途，继续使用视为使用者同意此声明。</p>
-<p>附: 二○○二年一月一日《计算机软件保护条例》第十七条规定：为了学习和研究软件内含的设计思想和原理，通过安装、显示、传输或者存储软件等方式使用软件的，可以不经软件著作权人许可，不向其支付报酬！鉴于此，也希望大家按此说明研究软件</p>
+<pre><code>00000000  28 76 00 02 00 01 02 03  04 05 00 00 00 00 00 00  |(v..............|
+</code></pre>
+<pre><code>00000010  ff ff ff ff ff ff ff ff  ff ff ff ff ff ff ff ff  |................|
+</code></pre>
+<pre><code>00000020  00 00 00 00 20 00 00 00  ac db da 5b 6f 08 00 01  |.... ......[o...|
+</code></pre>
+<pre><code>00000030  02 03 04 07 22 34 00 20  ff ff 00 01 00 00 00 00  |....&quot;4. ........|
+</code></pre>
+<pre><code>00000040  00 00 22 00 00 00 00 00  30 00 00 00 00 00 00 00  |..&quot;.....0.......|
+</code></pre>
+<pre><code>00000050  82 00 00 94 40 b6 c0 ca  20 85 84 84 40 ca 23 00  |....@... ...@.#.|
+</code></pre>
+<pre><code>00000060  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|
+</code></pre>
+<pre><code>*
+</code></pre>
+<pre><code>000000a0  c6 c6 c4 c4 c4 c0 c0 c4  c4 c4 c4 c4 c0 c0 00 00  |................|
+</code></pre>
+<pre><code>000000b0  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|
+</code></pre>
+<pre><code>000000c0  00 00 00 00 00 00 00 00  00 1a 22 2a 31 35 01 35  |..........&quot;*15.5|
+</code></pre>
+<pre><code>000000d0  39 40 46 4d 7f 7f 7f 00  00 00 00 00 00 00 00 00  |9@FM............|
+</code></pre>
+<pre><code>000000e0  11 1d 11 1d 1c 35 1c 35  1e 35 1e 35 17 19 17 19  |.....5.5.5.5....|
+</code></pre>
+<pre><code>000000f0  02 00 00 00 bc 00 00 88  0a 00 00 00 00 00 00 00  |................|
+</code></pre>
+<pre><code>00000100  ff ff ff ff ff ff ff ff  ff ff ff ff ff ff ff ff  |................|
+</code></pre>
+<pre><code>*
+</code></pre>
+<pre><code>00000120  00 00 00 00 00 00 00 00  00 00 00 00 00 00 77 00  |..............w.|
+</code></pre>
+<pre><code>00000130  11 1d 11 1d 15 7f 15 7f  17 7f 17 7f 10 3b 10 3b  |.............;.;|
+</code></pre>
+<pre><code>00000140  ff ff ff ff 11 00 ff ff  ff ff ff ff ff ff ff ff  |................|
+</code></pre>
+<pre><code>00000150  ff ff ff ff ff ff ff ff  ff ff ff ff ff ff ff ff  |................|
+</code></pre>
+<pre><code>*
+</code></pre>
+<pre><code>00010000
+</code></pre>
+<pre><code>Font: big
+                         ______  _______      _             _           
+                        |  ____||__   __|    (_)           (_)          
+                        | |__      | | _   _  _  _ __ ___   _  _ __    __ _ 
+                        |  __|     | || | | || || &#39;_ ` _ \ | || &#39;_ \  / _` |
+                        | |        | || |_| || || | | | | || || | | || (_| |
+                        |_|        |_| \__, ||_||_| |_| |_||_||_| |_| \__, |
+                                        __/ |                          __/ |
+                                       |___/                          |___/ 
+</code></pre>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 3400639399@qq.com </span>
