@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Hello World | FTyiming</title>
-  <meta name="keywords" content="">
-  <meta name="description" content="Hello World | FTyiming">
+  <title>记录一次清除git历史记录 | FTyiming</title>
+  <meta name="keywords" content=" linux ">
+  <meta name="description" content="记录一次清除git历史记录 | FTyiming">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="学习计划 宿舍空调 压缩机功耗大 -压缩机 高压管 低压管 毛细管 蒸发器 制冷剂 吸收式制冷体积大 -溴化 电子控制模块 wifi模块 或者蓝牙模块已经非常成熟   家用太阳能发电系统搭建  材料成本高 -太阳能发电板 面积未知 -逆变器 整流桥 PN节 空气开关 各种电路保护 不会 -户外电源 至少20Ah  2000多块 -能否并网把电卖给公网 理论上不可能回本，所以只能是玩玩 材料全是二手">
 <meta property="og:type" content="website">
@@ -497,19 +497,26 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-记录一次清除git历史记录" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">Hello World</h1>
+        <h1 class="article-title">记录一次清除git历史记录</h1>
     
     <div class="article-meta">
         
         
         
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color1">linux</a>
+            
+        </span>
         
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 1985-10-26 16:15:00'>2024-03-22 11:51</time>
+            发布时间 : <time class="date" title='最后更新: 2024-05-26 10:35:48'>2024-05-26 22:25</time>
         
     </div>
     <div class="article-meta">
@@ -531,7 +538,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%AD%A5%E9%AA%A4%E4%B8%89-%E6%B8%85%E7%90%86%E5%92%8C%E5%9B%9E%E6%94%B6%E7%A9%BA%E9%97%B4"><span class="toc-text">步骤三: 清理和回收空间</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -547,19 +554,117 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;
+        <pre><code> git filter-branch --force --index-filter &#39;git rm --cached --ignore-unmatch -r 抓包&#39; --prune-empty --tag-name-filter cat -- --all
+WARNING: git-filter-branch has a glut of gotchas generating mangled history
+         rewrites.  Hit Ctrl-C before proceeding to abort, then use an
+         alternative filtering tool such as &#39;git filter-repo&#39;
+         (https://github.com/newren/git-filter-repo/) instead.  See the
+         filter-branch manual page for more details; to squelch this warning,
+         set FILTER_BRANCH_SQUELCH_WARNING=1.
+Proceeding with filter-branch...Rewrite 7059304eae1be5aa2d34594d67b06082ce84c070 (37/63) (9 seconds passed, remaining 6 predicted)    rm &#39;抓包/-01.cap&#39;
+rm &#39;抓包/-01.csv&#39;
+rm &#39;抓包/-01.kismet.csv&#39;
+rm &#39;抓包/-01.kismet.netxml&#39;
+rm &#39;抓包/-01.log.csv&#39;
+rm &#39;抓包/-02.cap&#39;
 </code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server
+<pre><code>git filter-branch --force --index-filter &#39;git rm --cached --ignore-unmatch -r 抓包&#39; --prune-empty --tag-name-filter cat -- --allWARNING: git-filter-branch has a glut of gotchas generating mangled history         rewrites.  Hit Ctrl-C before proceeding to abort, then use an         alternative filtering tool such as &#39;git filter-repo&#39;
+         (https://github.com/newren/git-filter-repo/) instead.  See the         filter-branch manual page for more details; to squelch this warning,
+         set FILTER_BRANCH_SQUELCH_WARNING=1.
+Proceeding with filter-branch...Cannot rewrite branches: You have unstaged changes.
 </code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate
+<p><code>git filter-branch</code> 是一个强大的工具，用于重写 Git 存储库的历史记录，但它也有一些警告和潜在的陷阱，正如你所看到的那样。在你的情况下，你收到了一个警告，建议你使用 <code>git filter-repo</code> 作为替代方案，因为 <code>git filter-branch</code> 有时可能会导致复杂的历史记录重写。</p>
+<p>另外，你遇到的错误消息“Cannot rewrite branches: You have unstaged changes”表明你有未提交的更改在你的工作目录中。<code>git filter-branch</code> 要求你的工作目录是干净的，以便它可以安全地重写历史记录。</p>
+<p>为了解决这个问题，你可以按照以下步骤操作：</p>
+<ol>
+<li><p>提交或丢弃你的未暂存更改。</p>
+<ul>
+<li>如果你想要保留这些更改，请使用 <code>git add</code> 暂存它们，然后使用 <code>git commit</code> 提交它们。</li>
+<li>如果你不想保留这些更改，可以使用 <code>git stash</code> 将它们保存为一个临时的“stash”，稍后可以再恢复，或者简单地使用 <code>git checkout .</code> 或 <code>git reset --hard</code>（警告：这将丢弃所有未暂存的更改）来丢弃它们。</li>
+</ul>
+</li>
+<li><p>清理工作目录后，再次运行 <code>git filter-branch</code> 命令。</p>
+</li>
+<li><p>如果你想要忽略警告并继续使用 <code>git filter-branch</code>，可以设置环境变量 <code>FILTER_BRANCH_SQUELCH_WARNING=1</code>，但这并不推荐，除非你完全了解 <code>git filter-branch</code> 的潜在风险。</p>
+</li>
+<li><p>考虑使用 <code>git filter-repo</code>，这是一个更现代、更快、更易于使用的工具，用于重写 Git 历史记录。如果你决定使用 <code>git filter-repo</code>，你需要先安装它（通常通过 pip），然后按照它的文档进行操作。</p>
+</li>
+</ol>
+<p>注意：重写 Git 历史记录是一个破坏性的操作，并且可能会导致你的存储库与其他克隆或拉取请求的存储库不兼容。在进行此类操作之前，请确保你了解这些风险，并备份你的存储库。</p>
+<pre><code>git push origin master --force --all
+fatal: --all can&#39;t be combined with refspecs
 </code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy
+<p><code>git push origin master --force --all</code> 命令中的 <code>--all</code> 参数与特定的引用规范（refspec）<code>master</code> 不能一起使用，因为这两个选项有不同的目的和用法。</p>
+<ul>
+<li><code>--all</code>：这个选项告诉 Git 推送所有分支到远程仓库。</li>
+<li><code>master</code>：这是一个引用规范，指定了要推送的特定分支。</li>
+<li><code>--force</code>：这个选项（有时也写作 <code>-f</code>）用于强制推送，即使这会导致远程仓库上的历史记录被覆盖。</li>
+</ul>
+<p>如果你想要强制推送 <code>master</code> 分支，你应该只使用 <code>master</code> 作为引用规范，并加上 <code>--force</code> 参数：</p>
+<pre><code class="bash">git push origin master --force
 </code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p>或者简写为：</p>
+<pre><code class="bash">git push -f origin master
+</code></pre>
+<p>如果你想要推送所有分支，并强制覆盖远程仓库上的分支（这是一个危险的操作，因为它会覆盖远程仓库上所有分支的历史记录），你应该使用 <code>--all</code> 和 <code>--force</code> 一起：</p>
+<pre><code class="bash">git push --all --force origin
+</code></pre>
+<p>或者简写为：</p>
+<pre><code class="bash">git push -f --all origin
+</code></pre>
+<p>但是请注意，使用 <code>--force</code> 和 <code>--all</code> 一起推送可能会对你的协作者造成问题，特别是如果他们也在推送更改到相同的分支。确保你了解这些操作的后果，并在团队中协调好这些操作。</p>
+<pre><code>git push origin main --force
+Enumerating objects: 735, done.
+Counting objects: 100% (732/732), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (594/594), done.
+Writing objects:  52% (381/727), 53.70 MiB | 1.65 MiB/s
+</code></pre>
+<p><code>git push origin main --force</code> 命令用于强制推送本地的 <code>main</code> 分支到远程的 <code>origin</code> 仓库，并且会覆盖远程仓库上的 <code>main</code> 分支。在你给出的输出中，Git 正在准备推送一系列对象（即你的更改）到远程仓库。</p>
+<p>输出信息解释如下：</p>
+<ul>
+<li><code>Enumerating objects: 735, done.</code>：Git 正在计算需要推送的对象的数量，并发现总共有 735 个对象。</li>
+<li><code>Counting objects: 100% (732/732), done.</code>：Git 已经计算了所有 732 个对象（可能有些对象在压缩过程中会合并，所以最终数量可能与 735 不完全匹配）。</li>
+<li><code>Delta compression using up to 12 threads</code>：Git 正在使用多达 12 个线程来进行 delta 压缩，这是一种优化策略，可以减小推送数据的大小。</li>
+<li><code>Compressing objects: 100% (594/594), done.</code>：所有的对象（在这种情况下是 594 个）都已经被压缩。</li>
+<li><code>Writing objects: 52% (381/727), 53.70 MiB | 1.65 MiB/s</code>：Git 正在将压缩后的对象写入到传输协议中以便推送到远程仓库。当前进度是 52% 完成，已经写入了 381 个对象（总共 727 个），并且已经传输了 53.70 MiB 的数据，当前的传输速度是 1.65 MiB&#x2F;s。</li>
+</ul>
+<p>这个过程可能会持续一段时间，特别是如果你的网络连接速度较慢，或者需要推送的数据量很大。一旦完成，你的本地 <code>main</code> 分支的更改就会被推送到远程的 <code>origin</code> 仓库，并且覆盖远程仓库上的 <code>main</code> 分支。</p>
+<p><strong>注意</strong>：使用 <code>--force</code> 选项进行推送会覆盖远程仓库上的历史记录，这可能会导致其他人的工作丢失。在大多数情况下，最好先与团队成员协调，并确保他们知道你要进行强制推送。如果你正在单独工作，或者你确定需要覆盖远程仓库上的更改，那么使用 <code>--force</code> 选项是可以的。但在团队项目中，应该尽量避免使用它，除非有明确的理由。</p>
+<h3 id="步骤三-清理和回收空间"><a href="#步骤三-清理和回收空间" class="headerlink" title="步骤三: 清理和回收空间"></a><strong>步骤三: <strong>清理和回收空间</strong></strong></h3><p>虽然上面我们已经删除了文件, 但是我们的repo里面仍然保留了这些objects, 等待垃圾回收(GC), 所以我们要用命令彻底清除它, 并收回空间.</p>
+<p>命令如下:</p>
+<p><a href="javascript:void(0);" title="复制代码"><img src="https://assets.cnblogs.com/images/copycode.gif" alt="复制代码"></a></p>
+<pre><code>$ rm -rf .git/refs/original/
+
+$ git reflog expire --expire=now --all
+
+$ git gc --prune=now
+</code></pre>
+<pre><code>Counting objects: 2437, done.
+# Delta compression using up to 4 threads.
+# Compressing objects: 100% (1378/1378), done.
+# Writing objects: 100% (2437/2437), done.
+# Total 2437 (delta 1461), reused 1802 (delta 1048)
+</code></pre>
+<pre><code>$ git gc --aggressive --prune=now
+</code></pre>
+<pre><code>Counting objects: 2437, done.
+# Delta compression using up to 4 threads.
+# Compressing objects: 100% (2426/2426), done.
+# Writing objects: 100% (2437/2437), done.
+# Total 2437 (delta 1483), reused 0 (delta 0)
+</code></pre>
+<p><a href="javascript:void(0);" title="复制代码"><img src="https://assets.cnblogs.com/images/copycode.gif" alt="复制代码"></a></p>
+<p>注: 绿色字部分是命令执行后的结果.</p>
+<p><code>git gc</code> 命令用于执行 Git 仓库的垃圾收集（garbage collection），清理不需要的对象并优化本地仓库的性能。当你加上 <code>--aggressive</code> 和 <code>--prune=now</code> 选项时，你正在指示 Git 执行更彻底和即时的清理。</p>
+<p>具体来说：</p>
+<ul>
+<li><code>--aggressive</code>：这个选项会尝试更积极地清理和压缩仓库。它会进行更多的优化，包括更深入地查找可以清理的对象。但请注意，这可能会增加 <code>git gc</code> 的运行时间。</li>
+<li><code>--prune=now</code>：这个选项告诉 Git 立即执行“修剪”操作，删除所有不可达的对象。默认情况下，Git 会在一段时间后自动修剪不可达对象，但 <code>--prune=now</code> 会立即执行这个操作。</li>
+</ul>
+<p>组合使用这两个选项，<code>git gc --aggressive --prune=now</code> 会执行一个更彻底、更即时的仓库清理和压缩。这可能会释放大量磁盘空间，特别是如果你有一个大的或旧的 Git 仓库，并且已经删除了很多文件或提交。</p>
+<p>然而，需要注意的是，<code>git gc</code> 是一个重量级的操作，特别是在使用了 <code>--aggressive</code> 选项时。它可能会消耗大量的 CPU 和磁盘 I&#x2F;O 资源，并且可能需要一些时间来完成。因此，最好在生产环境的非高峰时段运行这个命令，以避免影响其他正在进行的操作。</p>
+<p>另外，如果你正在使用 Git 服务器（如 GitLab、GitHub Enterprise 等），它们可能已经有了自己的垃圾收集和清理机制。在这种情况下，你可能不需要手动运行 <code>git gc</code> 命令。始终最好先查阅你正在使用的 Git 服务器的文档，以了解它们如何处理仓库的清理和优化。</p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 3400639399@qq.com </span>
