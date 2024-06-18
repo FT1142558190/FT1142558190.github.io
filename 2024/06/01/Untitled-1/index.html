@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>使用 Debian 服务器作为家庭网关 | FTyiming</title>
-  <meta name="keywords" content=" Linux ">
-  <meta name="description" content="使用 Debian 服务器作为家庭网关 | FTyiming">
+  <title>局域网共享 Guest 无需密码匿名访问 | FTyiming</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="局域网共享 Guest 无需密码匿名访问 | FTyiming">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="学习计划 宿舍空调 压缩机功耗大 -压缩机 高压管 低压管 毛细管 蒸发器 制冷剂 吸收式制冷体积大 -溴化 电子控制模块 wifi模块 或者蓝牙模块已经非常成熟   家用太阳能发电系统搭建  材料成本高 -太阳能发电板 面积未知 -逆变器 整流桥 PN节 空气开关 各种电路保护 不会 -户外电源 至少20Ah  2000多块 -能否并网把电卖给公网 理论上不可能回本，所以只能是玩玩 材料全是二手">
 <meta property="og:type" content="website">
@@ -682,34 +682,19 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-使用 Debian 服务器作为家庭网关" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-Untitled-1" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">使用 Debian 服务器作为家庭网关</h1>
+        <h1 class="article-title">局域网共享 Guest 无需密码匿名访问</h1>
     
     <div class="article-meta">
         
         
         
-        <span class="book">
-            <i class="iconfont icon-category"></i>
-            
-            
-            <a  data-rel="软路由">软路由</a>
-            
-        </span>
-        
-        
-        <span class="tag">
-            <i class="iconfont icon-tag"></i>
-            
-            <a class="color1">Linux</a>
-            
-        </span>
         
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2024-06-15 22:16:22'>2024-06-15 20:25</time>
+            发布时间 : <time class="date" title='最后更新: 2024-06-16 08:13:42'>2024-06-01 20:25</time>
         
     </div>
     <div class="article-meta">
@@ -731,7 +716,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE"><span class="toc-text">基础配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%9E%E6%8E%A5"><span class="toc-text">连接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B3%BB%E7%BB%9F"><span class="toc-text">系统</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#PPPoE-%E6%8B%A8%E5%8F%B7"><span class="toc-text">PPPoE 拨号</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BD%91%E5%85%B3-IP"><span class="toc-text">网关 IP</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#DHCP-%E6%9C%8D%E5%8A%A1%E5%92%8C-DNS-%E6%9C%8D%E5%8A%A1"><span class="toc-text">DHCP 服务和 DNS 服务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#IP-%E8%BD%AC%E5%8F%91%E5%92%8C-NAT"><span class="toc-text">IP 转发和 NAT</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9B%E9%98%B6%E9%85%8D%E7%BD%AE"><span class="toc-text">进阶配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%98%B2%E7%81%AB%E5%A2%99"><span class="toc-text">防火墙</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Wireguard"><span class="toc-text">Wireguard</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SS-REDIR-%E5%92%8C-SS-TUNNEL"><span class="toc-text">SS-REDIR 和 SS-TUNNEL</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3-DNS-%E6%B1%A1%E6%9F%93"><span class="toc-text">解决 DNS 污染</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#IPv6"><span class="toc-text">IPv6</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%B5%E8%84%91%E5%BC%80%E5%90%AF%E6%8B%A8%E5%8F%B7%E5%90%8E%EF%BC%8C%E7%94%B5%E8%84%91%E5%85%B3%E6%9C%BA%E4%BA%86%E5%88%AB%E7%9A%84%E8%AE%BE%E5%A4%87%E7%BB%8F%E8%BF%87%E5%BC%80%E5%90%AF%E6%A1%A5%E6%8E%A5%E7%9A%84%E5%85%89%E7%8C%AB%E8%BF%98%E8%83%BD%E4%B8%8A%E7%BD%91%E5%90%97"><span class="toc-text">电脑开启拨号后，电脑关机了别的设备经过开启桥接的光猫还能上网吗</span></a></li></ol></li></ol>
+        
     
 <style>
     .left-col .switch-btn,
@@ -747,140 +732,20 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>前一段时间买了台 HPE Microserver Gen10，考虑到这货有两块千兆网卡，总觉得不把它当成路由器&#x2F;网关来用有点浪费，于是忍不住拆掉了原来的 EdgeRouter X，开始折腾软路由。</p>
-<h2 id="基础配置"><a href="#基础配置" class="headerlink" title="基础配置"></a>基础配置</h2><h3 id="连接"><a href="#连接" class="headerlink" title="连接"></a>连接</h3><p>Microserver Gen10 有两块网卡，在 Debian 中分别对应 <code>enp2s0f0</code> 和 <code>enp2s0f1</code>，这里我将 <code>enp2s0f0</code> 作为LAN口，连接到家里的交换机，用于连接各种有线设备和无线AP；另一个 <code>enp2s0f1</code> 作为WAN口，连接到光猫。</p>
-<h3 id="系统"><a href="#系统" class="headerlink" title="系统"></a>系统</h3><p>没什么好说的，习惯用 Debian，其他主流 Linux 发行版应该都可以用。不过在装 Debian 的过程中遇到了些 Microserver 特有的坑，回头再写篇文章详解。</p>
-<h3 id="PPPoE-拨号"><a href="#PPPoE-拨号" class="headerlink" title="PPPoE 拨号"></a>PPPoE 拨号</h3><p>作为网关，PPPoE 拨号是必须的，安装 <code>pppoeconf</code> 包，然后按照提示配置即可：</p>
-<pre><code>sudo apt install pppoeconf
-sudo pppoeconf
+        <p>关键：开启SMB服务器和客户端。</p>
+<p>开始 右键 - 应用 -  程序和功能 - 启用或关闭windows功能 - 开启SMB共享支持</p>
+<p>不只是1709开始出现的，还是企业版默认未启用。</p>
+<p>之后和以前windows的设置方法一样了，开启guest，关闭密码需要</p>
+<p>win + R</p>
+<p>gpedit.msc</p>
+<p>将第三方 SMB 服务器设备配置为需要 SMB 连接的用户名和密码。 如果设备允许来宾访问，则网络上的任何设备或人员都可以读取或复制所有共享数据，而无需任何审核线索或凭据。</p>
+<p>如果无法将第三方设备配置为安全，可以使用以下组策略设置启用不安全的来宾访问：</p>
+<pre><code>在 Windows 设备上打开 本地组策略编辑器 (gpedit.msc) 。
+在控制台树中，依次选择“计算机配置”&gt;“管理模板”&gt;“网络”&gt;“Lanman 工作站”。
+对于设置，右键单击“启用不安全的来宾登录”，然后选择“编辑”。
+选择 “启用&gt;确定”。
+默认情况下，Windows 11 Insider Preview 版本 25267 及更高版本也需要 SMB 签名。 不能通过 SMB 签名使用来宾访问。 若要禁用 SMB 签名，请参阅 控制 SMB 签名行为 (预览) 。
 </code></pre>
-<h3 id="网关-IP"><a href="#网关-IP" class="headerlink" title="网关 IP"></a>网关 IP</h3><p>跟大多数家用路由器一样，网关的LAN口需要拥有一个固定的内网IP地址，这里我设置为 <code>192.168.1.1/24</code>（假设LAN网段为 <code>192.168.1.0/24</code>），编辑 <code>/etc/network/interfaces</code>，添加LAN口配置：</p>
-<pre><code>allow-hotplug enp2s0f0
-auto enp2s0f0
-iface enp2s0f0 inet static
-    address 192.168.1.1/24
-</code></pre>
-<p>重启 networking 服务使之生效：</p>
-<pre><code>sudo systemctl restart networking
-</code></pre>
-<h3 id="DHCP-服务和-DNS-服务"><a href="#DHCP-服务和-DNS-服务" class="headerlink" title="DHCP 服务和 DNS 服务"></a>DHCP 服务和 DNS 服务</h3><p>网关开启DHCP服务，给局域网内的设备自动分发IP地址，这里我用的是非常流行的 dnsmasq，不仅可以作为DHCP服务器，还能作为DNS服务器。安装 dnsmasq：</p>
-<pre><code>sudo apt install dnsmasq
-</code></pre>
-<p>编辑 <code>/etc/dnsmasq.conf</code>，添加如下配置：</p>
-<pre><code>interface=enp2s0f0
-listen-address=192.168.1.1
-dhcp-range=192.168.1.10,192.168.1.150,255.255.255.0,12h
-dhcp-option=3,192.168.1.1
-</code></pre>
-<p>重启 dnsmasq 服务使之生效：</p>
-<pre><code>sudo systemctl restart dnsmasq
-</code></pre>
-<h3 id="IP-转发和-NAT"><a href="#IP-转发和-NAT" class="headerlink" title="IP 转发和 NAT"></a>IP 转发和 NAT</h3><p>光有IP地址还不够，作为网关，必须要能够转发来自局域网的所有数据。编辑 <code>/etc/sysctl.conf</code>，将 <code>net.ipv4.ip_forward</code>这一行的注释去掉：</p>
-<pre><code>net.ipv4.ip_forward=1
-</code></pre>
-<p>然后执行 <code>sudo sysctl -f</code> 使其生效。</p>
-<p>同时，为了使局域网内的设备能够访问外网，还需要配置NAT规则：</p>
-<pre><code>sudo iptables -t nat -A POSTROUTING -s 192.168.1.0/24 -j MASQUERADE
-</code></pre>
-<h2 id="进阶配置"><a href="#进阶配置" class="headerlink" title="进阶配置"></a>进阶配置</h2><p>至此，所有局域网设备应该能够通过刚刚设置好的网关访问互联网了。但是既然用 Debian 服务器作为软路由，当然要充分利用 Linux 的灵活性，进行更进一步的配置。</p>
-<h3 id="防火墙"><a href="#防火墙" class="headerlink" title="防火墙"></a>防火墙</h3><p>屏蔽掉除了 PING 和 SSH 服务以外的一切外部来源请求：</p>
-<pre><code>sudo iptables -A INPUT -p icmp -m icmp-type 8 -j ACCEPT
-sudo iptables -A INPUT -p tcp -m tcp --dport 22 -j ACCEPT
-sudo iptables -A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
-sudo iptables -A INPUT -i lo -j ACCEPT
-sudo iptables -A INPUT -i ppp0 -j DROP
-</code></pre>
-<h3 id="Wireguard"><a href="#Wireguard" class="headerlink" title="Wireguard"></a>Wireguard</h3><p>为了方便从外网访问家里的局域网，我在一台外网的服务器上配置了 Wireguard，只需要将网关与外网的服务器通过 Wireguard 连接，不论我在哪里，只要能连上 Wireguard 网络，就能穿透互联网回到家中。</p>
-<p>Wireguard 的安装可以参考官网介绍 <a target="_blank" rel="noopener" href="https://www.wireguard.com/install/">https://www.wireguard.com/install/</a></p>
-<p>安装好 Wireguard 之后，创建 Wireguard 的配置文件，假设为 <code>/etc/wireguard/wg0.conf</code>：</p>
-<pre><code>[Interface]
-PrivateKey = [PRIVATE KEY]
-ListenPort = 51820
-[Peer]
-Endpoint = [ENDPOINT]:51820
-PublicKey = [PEER&#39;S PUBLIC KEY]
-AllowedIPs = 192.168.10.0/24
-PersistentKeepalive = 30
-</code></pre>
-<p>这里使用了端口 51820，因此需要在防火墙开启这一端口：</p>
-<pre><code>sudo iptables -I INPUT -p udp -m udp -s ENDPOINT --dport 51820 -j ACCEPT
-</code></pre>
-<p>同时，编辑 <code>/etc/network/interfaces</code> 添加 Wireguard 的相关配置：</p>
-<pre><code>auto wg0
-iface wg0 inet static
-    address 192.168.10.x/24
-    pre-up ip link add $IFACE type wireguard
-    pre-up wg setconf $IFACE /etc/wireguard/$IFACE.conf
-    post-down ip link del $IFACE
-</code></pre>
-<p>启动 Wireguard 后，这时候 Wireguard 的虚拟网络为 <code>192.168.10.0/24</code>，而内网网段为 <code>192.168.1.0/24</code>，为了让连接到 Wireguard 网络的所有设备（比如手机）能够顺利访问到所有内网设备，还需要在网关上进行 NAT 的配置：</p>
-<pre><code>sudo iptables -t nat -A POSTROUTING -s 192.168.10.0/24 -j SNAT --to-source 192.168.1.1
-</code></pre>
-<p>这样所有来自 Wireguard 网段的请求的源地址都会被翻译成 <code>192.168.1.1</code> 从而得以访问内网其他设备。此外，还需要在外网的服务器上将 <code>192.168.1.0/24</code> 加入 <code>AllowedIPs</code>，这里贴一个外网服务器的 Wireguard 配置：</p>
-<pre><code>[Interface]
-ListenPort = 51820
-PrivateKey = [PRIVATE KEY]
-[Peer]
-PublicKey = [PEER&#39;S PUBLIC KEY]
-AllowedIPs = 192.168.10.x/32, 192.168.1.0/24
-PersistentKeepalive = 30
-</code></pre>
-<h3 id="SS-REDIR-和-SS-TUNNEL"><a href="#SS-REDIR-和-SS-TUNNEL" class="headerlink" title="SS-REDIR 和 SS-TUNNEL"></a>SS-REDIR 和 SS-TUNNEL</h3><p>由于家里有两个 Google Home 音箱，为了让它们能够顺利连到 Google，需要在网关上进行相应的配置。这里我选择使用 ss-redir 和 ss-tunnel，其中 ss-redir 用于透明代理，ss-tunnel 用于 DNS 代理。</p>
-<p>ss-redir 和 ss-tunnel 的安装和配置可以参考官方介绍 <a target="_blank" rel="noopener" href="https://github.com/shadowsocks/shadowsocks-libev#transparent-proxy">https://github.com/shadowsocks/shadowsocks-libev#transparent-proxy</a></p>
-<p>我将 ss-redir 配置在了1081端口，<code>ss-tunnel</code> 配置在了5300端口。假设 Google Home 音箱的 IP 地址是 <code>192.168.1.x</code> ，只需如下配置即可完成对 TCP 流量的转发：</p>
-<pre><code>sudo iptables -t nat -A PREROUTING -p tcp -m tcp -s 192.168.1.x -j REDIRECT --to-port 1081
-</code></pre>
-<p>然而光配置好 TCP 流量的转发还不够，Google Home 音箱使用 Google 的 DNS 服务器进行 DNS 解析，因此需要将其重定向到 ss-tunnel 所在的5300端口：</p>
-<pre><code>sudo iptables -t nat -A PREROUTING -p udp -m udp -s 192.168.1.x --dport 53 -j REDIRECT --to-port 5300
-</code></pre>
-<h3 id="解决-DNS-污染"><a href="#解决-DNS-污染" class="headerlink" title="解决 DNS 污染"></a>解决 DNS 污染</h3><p>既然有了 ss-tunnel 顺便解决一下 DNS 污染问题吧，把所有的 DNS 请求都转发到国外去请求是不现实的，会导致 DNS 解析时间过长不说还会使很多国内网站解析到国外的 IP 从而使访问变慢。考虑到前面我已经装了 dnsmasq，因此，我选择了<a target="_blank" rel="noopener" href="https://github.com/felixonmars/dnsmasq-china-list">dnsmasq-china-list</a> 这个项目来解决 DNS 污染问题。</p>
-<p>dnsmasq-china-list 的思路很简单，国内域名用国内 DNS 服务器解析，其他域名用国外 DNS 服务器解析，为了实现这一目的，需要将项目目录中的 <code>accelerated-domains.china.conf</code> 和 <code>bogus-nxdomain.china.conf</code> 放到 <code>/etc/dnsmasq.d/</code> 目录中，同时编辑 <code>/etc/dnsmasq.conf</code>，将上游 DNS 服务器指向 ss-tunnel：</p>
-<pre><code>no-resolv
-server=192.168.1.1#5300
-conf-dir=/etc/dnsmasq.d
-</code></pre>
-<p>重启 dnsmasq 使之生效：</p>
-<pre><code>sudo systemctl restart dnsmasq
-</code></pre>
-<h3 id="IPv6"><a href="#IPv6" class="headerlink" title="IPv6"></a>IPv6</h3><p>由于江苏联通至今没有提供原生的 IPv6 接入，因此现阶段若要体验 IPv6 还只能通过 HE 提供的 IPv6 Tunnel Broker 接入。</p>
-<p>在 <a target="_blank" rel="noopener" href="https://tunnelbroker.net/">Tunnel Broker</a> 网站上申请好 IPv6 Tunnel 之后， 编辑 <code>/etc/network/interfaces</code>，添加 tunnel 配置：</p>
-<pre><code>auto tun0
-iface tun0 inet6 v4tunnel
-    address [Client IPv6 Address]
-    netmask 64
-    endpoint [Server IPv4 Address]
-    local 0.0.0.0
-    ttl 255
-    gateway [Server IPv6 Address]
-</code></pre>
-<p>别忘了将 Tunnel Broker 的 Endpoint IPv4 地址加入防火墙白名单：</p>
-<pre><code>sudo iptables -I INPUT -s [Server IPv4 Address] -j ACCEPT
-</code></pre>
-<p>网关有了 IPv6 地址之后，还得给局域网内的设备分配 IPv6 地址，这里需要用到 radvd：</p>
-<pre><code>sudo apt install radvd
-</code></pre>
-<p>编辑 <code>/etc/radvd.conf</code>，将 Tunnel Broker 分配的 &#x2F;64 地址段填进去：</p>
-<pre><code>interface enp2s0f0
-&#123;
-    AdvSendAdvert on;
-    AdvIntervalOpt on;
-    MinRtrAdvInterval 60;
-    MaxRtrAdvInterval 300;
-    AdvLinkMTU 1280;
-    AdvOtherConfigFlag on;
-    AdvHomeAgentFlag off;
-    prefix [Routed IPv6 Prefix /64]
-    &#123;
-        AdvOnLink on;
-        AdvAutonomous on;
-        AdvRouterAddr on;
-    &#125;;
-&#125;;
-</code></pre>
-<p>重启 radvd，局域网内的设备应该都能获得 IPv6 地址了：</p>
-<pre><code>sudo systemctl restart radvd
-</code></pre>
-<h3 id="电脑开启拨号后，电脑关机了别的设备经过开启桥接的光猫还能上网吗"><a href="#电脑开启拨号后，电脑关机了别的设备经过开启桥接的光猫还能上网吗" class="headerlink" title="电脑开启拨号后，电脑关机了别的设备经过开启桥接的光猫还能上网吗"></a>电脑开启拨号后，电脑关机了别的设备经过开启桥接的光猫还能上网吗</h3><p>答案是不行的，那么软路由的方案还低改</p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 3400639399@qq.com </span>
