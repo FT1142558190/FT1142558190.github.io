@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>家用电脑也能轻松玩转大模型 | FTyiming</title>
+  <title>局域网共享 Guest 无需密码匿名访问 | FTyiming</title>
   <meta name="keywords" content="">
-  <meta name="description" content="家用电脑也能轻松玩转大模型 | FTyiming">
+  <meta name="description" content="局域网共享 Guest 无需密码匿名访问 | FTyiming">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="学习计划 宿舍空调 压缩机功耗大 -压缩机 高压管 低压管 毛细管 蒸发器 制冷剂 吸收式制冷体积大 -溴化 电子控制模块 wifi模块 或者蓝牙模块已经非常成熟   家用太阳能发电系统搭建  材料成本高 -太阳能发电板 面积未知 -逆变器 整流桥 PN节 空气开关 各种电路保护 不会 -户外电源 至少20Ah  2000多块 -能否并网把电卖给公网 理论上不可能回本，所以只能是玩玩 材料全是二手">
 <meta property="og:type" content="website">
@@ -691,9 +691,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-家用电脑也能轻松玩转大模型" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-局域网共享 Guest 无需密码匿名访问" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">家用电脑也能轻松玩转大模型</h1>
+        <h1 class="article-title">局域网共享 Guest 无需密码匿名访问</h1>
     
     <div class="article-meta">
         
@@ -703,7 +703,7 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2024-04-26 23:47:26'>2024-04-26 23:42</time>
+            发布时间 : <time class="date" title='最后更新: 2024-06-20 05:40:39'>2024-06-19 20:25</time>
         
     </div>
     <div class="article-meta">
@@ -725,7 +725,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Ollama-%E7%AE%80%E4%BB%8B"><span class="toc-text">Ollama 简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%94%AF%E6%8C%81%E7%9A%84%E6%A8%A1%E5%9E%8B"><span class="toc-text">支持的模型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8"><span class="toc-text">安装和使用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%9C%AC%E5%9C%B0%E6%96%B9%E5%BC%8F%E5%AE%89%E8%A3%85"><span class="toc-text">1.本地方式安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-Docker-%E6%96%B9%E5%BC%8F%E5%AE%89%E8%A3%85"><span class="toc-text">2.Docker 方式安装</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#CPU%EF%BC%88%E9%BB%98%E8%AE%A4%EF%BC%89%E6%96%B9%E5%BC%8F%E8%BF%90%E8%A1%8C-ollama-%E5%AE%B9%E5%99%A8"><span class="toc-text">CPU（默认）方式运行 ollama 容器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#GPU-%E6%96%B9%E5%BC%8F%E8%BF%90%E8%A1%8C-ollama-%E5%AE%B9%E5%99%A8"><span class="toc-text">GPU 方式运行 ollama 容器</span></a></li></ol></li></ol></li></ol>
+        
     
 <style>
     .left-col .switch-btn,
@@ -741,122 +741,24 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>2022 年底 OpenAI 发布 ChatGPT，随后 2023 年大模型进入了有史以来发展最快速的时候，在这一年中，相继涌现了很多商业闭源或开源的大模型，本文就是通过 <a target="_blank" rel="noopener" href="https://github.com/jmorganca/ollama">Ollama</a> 开源应用程序将开源的大模型运行在家用电脑之上。</p>
-<h2 id="Ollama-简介"><a href="#Ollama-简介" class="headerlink" title="Ollama 简介"></a>Ollama 简介</h2><p>Ollama 是一款开源应用程序，可让你通过命令行界面运行、创建和共享大型语言模型。</p>
-<h2 id="支持的模型"><a href="#支持的模型" class="headerlink" title="支持的模型"></a>支持的模型</h2><p>Ollama 支持的可用开源模型列表网址：<a target="_blank" rel="noopener" href="https://ollama.ai/library" title="ollama model library">ollama.ai&#x2F;library</a></p>
-<p>下面是一些可下载的示例开源模型：</p>
-<table>
-<thead>
-<tr>
-<th>Model</th>
-<th>Parameters</th>
-<th>Size</th>
-<th>Download</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Llama 2</td>
-<td>7B</td>
-<td>3.8GB</td>
-<td><code>ollama run llama2</code></td>
-</tr>
-<tr>
-<td>Mistral</td>
-<td>7B</td>
-<td>4.1GB</td>
-<td><code>ollama run mistral</code></td>
-</tr>
-<tr>
-<td>Dolphin Phi</td>
-<td>2.7B</td>
-<td>1.6GB</td>
-<td><code>ollama run dolphin-phi</code></td>
-</tr>
-<tr>
-<td>Phi-2</td>
-<td>2.7B</td>
-<td>1.7GB</td>
-<td><code>ollama run phi</code></td>
-</tr>
-<tr>
-<td>Neural Chat</td>
-<td>7B</td>
-<td>4.1GB</td>
-<td><code>ollama run neural-chat</code></td>
-</tr>
-<tr>
-<td>Starling</td>
-<td>7B</td>
-<td>4.1GB</td>
-<td><code>ollama run starling-lm</code></td>
-</tr>
-<tr>
-<td>Code Llama</td>
-<td>7B</td>
-<td>3.8GB</td>
-<td><code>ollama run codellama</code></td>
-</tr>
-<tr>
-<td>Llama 2 Uncensored</td>
-<td>7B</td>
-<td>3.8GB</td>
-<td><code>ollama run llama2-uncensored</code></td>
-</tr>
-<tr>
-<td>Llama 2 13B</td>
-<td>13B</td>
-<td>7.3GB</td>
-<td><code>ollama run llama2:13b</code></td>
-</tr>
-<tr>
-<td>Llama 2 70B</td>
-<td>70B</td>
-<td>39GB</td>
-<td><code>ollama run llama2:70b</code></td>
-</tr>
-<tr>
-<td>Orca Mini</td>
-<td>3B</td>
-<td>1.9GB</td>
-<td><code>ollama run orca-mini</code></td>
-</tr>
-<tr>
-<td>Vicuna</td>
-<td>7B</td>
-<td>3.8GB</td>
-<td><code>ollama run vicuna</code></td>
-</tr>
-<tr>
-<td>LLaVA</td>
-<td>7B</td>
-<td>4.5GB</td>
-<td><code>ollama run llava</code></td>
-</tr>
-</tbody></table>
-<blockquote>
-<p>注意：本地运行 7B 模型至少需要 8GB 的 RAM，运行 13B 模型至少需要 16GB 的 RAM，如果运行 33B 模型，则至少需要 32GB 的 RAM。</p>
-</blockquote>
-<h2 id="安装和使用"><a href="#安装和使用" class="headerlink" title="安装和使用"></a>安装和使用</h2><h3 id="1-本地方式安装"><a href="#1-本地方式安装" class="headerlink" title="1.本地方式安装"></a>1.本地方式安装</h3><p>使用一键安装脚本进行安装：</p>
-<p><code>&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;``&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;curl https://ollama.ai/install.sh | sh &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</code></p>
-<p>以服务方式重启：</p>
-<p><code>&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;``&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;systemctl restart ollama &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</code></p>
-<p>查看服务状态：</p>
-<p><code>&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;``&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;systemctl status ollama &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</code></p>
-<p>查看服务日志：</p>
-<p><code>&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;``&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;journalctl &lt;span class=&quot;nt&quot;&gt;-u&lt;/span&gt; ollama &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</code></p>
-<p>使用脚本更新：</p>
-<p><code>&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;``&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;curl https://ollama.ai/install.sh | sh &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</code></p>
-<p>运行大模型：</p>
-<p><code>&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;``&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ollama run codellama:7b-instruct pulling manifest  pulling 3a43f93b78ec... 100% ▕████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏ 3.8 GB                          pulling 8c17c2ebb0ea... 100% ▕████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏ 7.0 KB                          pulling 590d74a5569b... 100% ▕████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏ 4.8 KB                          pulling 2e0493f67d0c... 100% ▕████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏   59 B                          pulling 7f6a57943a88... 100% ▕████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏  120 B                          pulling 316526ac7323... 100% ▕████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏  529 B                          verifying sha256 digest  writing manifest  removing any unused layers  success  &lt;span class=&quot;o&quot;&gt;&gt;&gt;&gt;&lt;/span&gt; Send a message &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;/? &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;help&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</code></p>
-<blockquote>
-<p>Ollama 会判别正在运行的硬件并在可行的情况下调用 GPU 加速，不妨在推理时打开活动监视器或任务管理器观察以验证。</p>
-</blockquote>
-<p>运行到这里，你本地的模型已经运行成功了，下面来简单使用下这个模型，输入“请使用Java编写一个冒泡排序方法”，让其写一个冒泡排序：</p>
-<h3 id="2-Docker-方式安装"><a href="#2-Docker-方式安装" class="headerlink" title="2.Docker 方式安装"></a>2.Docker 方式安装</h3><p>安装 docker 后，我们可通过 CPU 和 GPU 两种方式运行 ollama 容器。</p>
-<h4 id="CPU（默认）方式运行-ollama-容器"><a href="#CPU（默认）方式运行-ollama-容器" class="headerlink" title="CPU（默认）方式运行 ollama 容器"></a>CPU（默认）方式运行 ollama 容器</h4><p><code>&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;``&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker run &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt; ollama:/root/.ollama &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; 11434:11434 &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;     &lt;span class=&quot;nt&quot;&gt;--name&lt;/span&gt; ollama ollama/ollama &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</code></p>
-<h4 id="GPU-方式运行-ollama-容器"><a href="#GPU-方式运行-ollama-容器" class="headerlink" title="GPU 方式运行 ollama 容器"></a>GPU 方式运行 ollama 容器</h4><p><code>&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;``&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker run &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--gpus&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;all &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt; ollama:/root/.ollama &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; 11434:11434 &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;     &lt;span class=&quot;nt&quot;&gt;--name&lt;/span&gt; ollama ollama/ollama &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</code></p>
-<p>运行大模型：</p>
-<p><code>&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;``&lt;pre&gt; &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker &lt;span class=&quot;nb&quot;&gt;exec&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-it&lt;/span&gt; ollama ollama run llama2 &lt;/pre&gt;</code></p>
+        <p>关键：开启SMB服务器和客户端。</p>
+<p>开始 右键 - 应用 -  程序和功能 - 启用或关闭windows功能 - 开启SMB共享支持</p>
+<p>不只是1709开始出现的，还是企业版默认未启用。</p>
+<p>之后和以前windows的设置方法一样了，开启guest，关闭密码需要</p>
+<p>win + R</p>
+<p>gpedit.msc</p>
+<p>将第三方 SMB 服务器设备配置为需要 SMB 连接的用户名和密码。 如果设备允许来宾访问，则网络上的任何设备或人员都可以读取或复制所有共享数据，而无需任何审核线索或凭据。</p>
+<p>如果无法将第三方设备配置为安全，可以使用以下组策略设置启用不安全的来宾访问：</p>
+<pre><code>在 Windows 设备上打开 本地组策略编辑器 (gpedit.msc) 。
+在控制台树中，依次选择“计算机配置”&gt;“管理模板”&gt;“网络”&gt;“Lanman 工作站”。
+对于设置，右键单击“启用不安全的来宾登录”，然后选择“编辑”。
+选择 “启用&gt;确定”。
+默认情况下，Windows 11 Insider Preview 版本 25267 及更高版本也需要 SMB 签名。 不能通过 SMB 签名使用来宾访问。 若要禁用 SMB 签名，请参阅 控制 SMB 签名行为 (预览) 。
+</code></pre>
+<p>md  又是账号被禁止 又是黑名单 那么长的安全设施我怎么看</p>
+<p>远程桌面 mscst</p>
+<p>firewall.gsc 防火墙 </p>
+<p>英语呵呵</p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 3400639399@qq.com </span>
